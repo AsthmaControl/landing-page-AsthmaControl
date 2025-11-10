@@ -438,7 +438,6 @@ gap:75px;
 }
 
 .funcion-de-la-app{
-    justify-content: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -451,4 +450,67 @@ gap:75px;
 
 .funcion-de-la-app img{
     transition: transform 0.3s;
+}
+
+.div-ayuda h2{
+    font-size: 32px;
+}
+.div-ayuda-p{
+    width: 400px;
+}
+
+.div-ayuda-p p{
+    margin-top: 10px;
+    justify-content: justify;
+}
+.div-ayuda{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+        margin-top: 120px; /* deja lugar para el header fixed */
+    display: flex;
+    flex-direction: row; /* apila los elementos verticalmente */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 75px;
+
+}
+
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo input{
+    border-radius: 10px;
+color: rgb(158, 158, 158);
+border: 2px solid #4C6879;
+  padding-top: 10px;     /* empuja el texto hacia arriba */
+  box-sizing: border-box;}
+
+.campo label{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.formulario-ayuda textarea {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  border: 2px solid #4C6879;
+  padding: 10px; /* ahora sí, el texto y placeholder quedan arriba */
+  box-sizing: border-box;
+  resize: none;
+}
+
+.enviar-formulario{
+    font-weight: 600;
+    background-color: #FFCC00;
+    padding: 5px 10px 5px 10px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #FFCC00;
+    cursor: pointer;
 }
