@@ -525,77 +525,51 @@ border: 2px solid #4C6879;
 }
 
 @media (max-width: 768px) {
-  .barra-de-navegacion {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    background-color: #0d6efd;
+
+  /* --- SECCIÓN BIENVENIDA --- */
+  .bienvenida {
+    margin: 100px 20px 0 20px; /* márgenes laterales iguales */
+    align-items: center;        /* centramos todo */
     text-align: center;
-    padding: 10px 0;
   }
 
-  .barra-de-navegacion.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
   .bienvenida h1 {
-    font-size: 56px;
-    text-align: center;
+    font-size: 32px; /* más pequeño */
+    line-height: 1.2;
   }
 
   .bienvenida-texto-apoyo {
     font-size: 16px;
-    text-align: center;
+    margin-bottom: 10px;
   }
 
-  .imagenes-descargar img {
+  #botones-app {
+    justify-content: center;
+  }
+
+  #Google-play img{
+    height: 50%;
+    
+  }
+  #botones-app img {
     height: 50px;
+  }
+
+  .rating {
+    justify-content: center;
+  }
+
+  /* --- CELULAR DE MUESTRA --- */
+  .celular-app {
+    position: static;    /* elimina el posicionamiento absoluto */
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
   }
 
   .celular-app img {
     height: 300px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .beneficios-lista {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .seccion-intermedia .imagenes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .seccion-intermedia img {
-    height: 200px;
-    margin-bottom: 10px;
-  }
-
-  .preguntas-cuadro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .parte-final h1 {
-    text-align: center;
-    font-size: 26px;
-  }
-
-  .boton-descargar-container {
-    text-align: center;
+    max-width: 90%;
   }
 }
