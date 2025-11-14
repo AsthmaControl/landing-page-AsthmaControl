@@ -208,12 +208,30 @@ gap:75px;
 
 }
 
+.seccion-intermedia .imagenes img.first-image {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 300px;
+    width: auto;  /* mantiene proporción */
+    display: block;
+}
+
+.seccion-intermedia .imagenes img.second-image {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 300px;
+    width: auto;
+    display: block;
+}
+
 .seccion-intermedia .imagenes {
     border-radius: 25px;
     display: flex;        /* alinea los hijos en fila */
     margin-left: 300px;   /* opcional, para alinear con texto */
     margin-top: 50px;     /* separación desde el título */
 }
+
+
 
 
 .preguntas-frecuentes {
@@ -524,52 +542,13 @@ border: 2px solid #4C6879;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-
-  /* --- SECCIÓN BIENVENIDA --- */
-  .bienvenida {
-    margin: 100px 20px 0 20px; /* márgenes laterales iguales */
-    align-items: center;        /* centramos todo */
-    text-align: center;
-  }
-
-  .bienvenida h1 {
-    font-size: 32px; /* más pequeño */
-    line-height: 1.2;
-  }
-
-  .bienvenida-texto-apoyo {
+input[type="month"] {
+    border-radius: 10px;
+    color: rgb(158, 158, 158);
+    border: 2px solid #4C6879;
+    padding: 10px; /* más espacio para que no se vea cortado */
     font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  #botones-app {
-    justify-content: center;
-  }
-
-  #Google-play img{
-    height: 50%;
-    
-  }
-  #botones-app img {
-    height: 50px;
-  }
-
-  .rating {
-    justify-content: center;
-  }
-
-  /* --- CELULAR DE MUESTRA --- */
-  .celular-app {
-    position: static;    /* elimina el posicionamiento absoluto */
-    transform: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .celular-app img {
-    height: 300px;
-    max-width: 90%;
-  }
+    width: 300px;  /* coincide con tus textareas */
+    box-sizing: border-box;
+    background-color: white;
 }
