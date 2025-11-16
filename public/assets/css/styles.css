@@ -215,7 +215,10 @@ gap:75px;
     margin-top: 50px;     /* separación desde el título */
 }
 
-
+.imagenes {
+    display: flex;
+    gap: 30px;   /* espacio entre imágenes */
+}
 .preguntas-frecuentes {
     padding-top: 10%;
   margin: 40px auto;        /* centra el bloque horizontalmente */
