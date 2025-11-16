@@ -113,3 +113,4 @@ El código fuente y los materiales visuales no están destinados a distribución
 ---
 
 **© 2025 AsthmaControl Team — Universidad Peruana de Ciencias Aplicadas.**
+
