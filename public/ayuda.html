@@ -16,10 +16,12 @@
         <span class="AsthmaControl-texto">AsthmaControl</span>
       </a>
       <ul class="barra-de-navegacion">
+                        <li><a href="index.html">Inicio</a></li>
+
                 <li><a href="about.html">¿Qué es AsthmaControl?</a></li>
-                <li><a href="index.html">Beneficios</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
                 <li><a href="como-funciona.html">Cómo funciona</a></li>
-                <li><a href="ayuda.html">Ayuda</a></li>
+                <li><a href="ayuda.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -34,8 +36,8 @@
     </div>
     <form class="formulario-ayuda">
       <div class="campo">
-        <label for="">¿Desde cuando usas AsthmaControl?</label>
-        <input type="text" id="" name="">
+        <label for="inicio-uso">¿Desde cuándo usas AsthmaControl? <span style="font-weight: normal; font-size: 12px;">(pulsa el calendario para seleccionar)</span></label>
+        <input type="month" id="inicio-uso" name="inicio-uso" min="2025-01">
         <label for="problema">¿Qué problema experimentaste?</label>
         <textarea type="text" class="input-grande" id="" name=""></textarea>
         <label for="sugerencia">¿Que sugerencia envías al respecto?</label>
@@ -46,8 +48,36 @@
   </div>
 </section>
 
-  <footer class="footer">
-    <p>© 2025 AsthmaControl. Todos los derechos reservados.</p>
-  </footer>
+<footer class="footer">
+  <div class="footer-contenedor">
+      
+    <div class="footer-logo">
+      <img src="../public/assets/images/asthamcontrol.png" height="30" alt="AsthmaControl">
+      <span>AsthmaControl</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="about.html">¿Qué es AsthmaControl?</a>
+      <a href="beneficios.html">Beneficios</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="ayuda.html">Contacto</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><img src="../public/assets/images/icon-facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="../public/assets/images/icon-instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="../public/assets/images/icon-twitter.png" alt="Twitter"></a>
+    </div>
+
+    <div class="footer-politicas">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Contacto</a>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">© 2025 AsthmaControl. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>

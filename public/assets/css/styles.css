@@ -208,6 +208,22 @@ gap:75px;
 
 }
 
+.seccion-intermedia .imagenes img.first-image {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 300px;
+    width: auto;  /* mantiene proporción */
+    display: block;
+}
+
+.seccion-intermedia .imagenes img.second-image {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 300px;
+    width: auto;
+    display: block;
+}
+
 .seccion-intermedia .imagenes {
     border-radius: 25px;
     display: flex;        /* alinea los hijos en fila */
@@ -215,10 +231,9 @@ gap:75px;
     margin-top: 50px;     /* separación desde el título */
 }
 
-.imagenes {
-    display: flex;
-    gap: 30px;   /* espacio entre imágenes */
-}
+
+
+
 .preguntas-frecuentes {
     padding-top: 10%;
   margin: 40px auto;        /* centra el bloque horizontalmente */
@@ -527,144 +542,88 @@ border: 2px solid #4C6879;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-
-  /* --- SECCIÓN BIENVENIDA --- */
-  .bienvenida {
-    margin: 100px 20px 0 20px; /* márgenes laterales iguales */
-    align-items: center;        /* centramos todo */
-    text-align: center;
-  }
-
-  .bienvenida h1 {
-    font-size: 32px; /* más pequeño */
-    line-height: 1.2;
-  }
-
-  .bienvenida-texto-apoyo {
+input[type="month"] {
+    border-radius: 10px;
+    color: rgb(158, 158, 158);
+    border: 2px solid #4C6879;
+    padding: 10px; /* más espacio para que no se vea cortado */
     font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  #botones-app {
-    justify-content: center;
-  }
-
-  #Google-play img{
-    height: 50%;
-    
-  }
-  #botones-app img {
-    height: 50px;
-  }
-
-  .rating {
-    justify-content: center;
-  }
-
-  /* --- CELULAR DE MUESTRA --- */
-  .celular-app {
-    position: static;    /* elimina el posicionamiento absoluto */
-    transform: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .celular-app img {
-    height: 300px;
-    max-width: 90%;
-  }
+    width: 300px;  /* coincide con tus textareas */
+    box-sizing: border-box;
+    background-color: white;
 }
 
-.texto-destacado {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 1.5;
+
+/* FOOTER NUEVO */
+.footer {
+  margin-top: 80px;
+  background-color: #E7F1F5;
+  color: #4C6879;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
-.funciones h2 {
-    font-size: 34px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.footer-contenedor {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
-.funciones .descripcion-funciones {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #4C6879;
-    max-width: 750px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.faq-seccion {
-    margin-top: 120px;
-    padding: 40px 20px;
+.footer-links,
+.footer-politicas,
+.footer-social {
+  display: flex;
+  gap: 25px;
 }
 
-.faq-seccion h2 {
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 40px;
+.footer-links a,
+.footer-politicas a {
+  color: #4C6879;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.faq-container {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
+.footer-links a:hover,
+.footer-politicas a:hover {
+  color: #2a4253;
+}
+
+.footer-social img {
+  height: 22px;
+  width: 22px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Footer Responsive */
+@media (max-width: 700px) {
+  .footer-links,
+  .footer-politicas {
     flex-direction: column;
-    gap: 30px;
-}
-
-.faq-item {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 20px 25px;
-    border: 1px solid #e5e5e5;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-    transition: transform 0.3s ease;
-}
-
-.faq-item:hover {
-    transform: scale(1.02);
-}
-
-.faq-item h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #4C6879;
-}
-
-.faq-item p {
-    font-size: 17px;
-    line-height: 1.6;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-
-    .faq-seccion {
-        padding: 20px;
-    }
-
-    .faq-item {
-        padding: 15px 20px;
-    }
-
-    .faq-item h3 {
-        font-size: 20px;
-    }
-
-    .faq-item p {
-        font-size: 16px;
-    }
-
-    .funciones .descripcion-funciones {
-        max-width: 90%;
-        font-size: 16px;
-    }
+    gap: 10px;
+  }
 }
