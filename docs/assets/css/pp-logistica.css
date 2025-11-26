@@ -1,0 +1,145 @@
+/* =================================================== */
+/* ====== ESTILOS ESPECÍFICOS: PACIENTE LOGÍSTICA ====== */
+/* =================================================== */
+
+.logistics-container {
+    padding: 1.5625rem;
+    margin-top: 1.25rem;
+}
+
+.logi-section {
+    background: #fff;
+    border-radius: 1.125rem;
+    padding: 1.5625rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+    margin-bottom: 1.875rem;
+}
+
+.logi-section h3 {
+    color: #4C6879;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    border-bottom: .0625rem solid #eee;
+    padding-bottom: .625rem;
+}
+
+/* Citas */
+.appointment-list {
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+}
+
+.appointment-item {
+    display: flex;
+    align-items: center;
+    padding: .9375rem;
+    border-radius: .625rem;
+    background-color: #f7f9fc;
+    border: .0625rem solid #e0e0e0;
+}
+
+.app-date {
+    background-color: #72c4ff;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: .5rem .625rem;
+    border-radius: .5rem;
+    font-size: .875rem;
+    margin-right: 1.25rem;
+    min-width: 3.75rem;
+}
+
+.app-info {
+    flex-grow: 1;
+}
+
+.app-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.app-info p {
+    margin: .1875rem 0 0 0;
+    font-size: .8125rem;
+    color: #666;
+}
+
+/* Inventario (HU-16) */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .9375rem;
+    margin-bottom: .9375rem;
+}
+
+.inventory-table th, .inventory-table td {
+    padding: .75rem;
+    text-align: left;
+    border-bottom: .0625rem solid #eee;
+}
+
+.inventory-table th {
+    background-color: #f0f0f0;
+    color: #4C6879;
+    font-weight: 500;
+}
+
+.alert-low {
+    color: #ff744e;
+    font-weight: 600;
+}
+
+.alert-ok {
+    color: #5cb85c;
+    font-weight: 600;
+}
+
+.inventory-note {
+    font-style: italic;
+    color: #888;
+    font-size: .8125rem;
+}
+
+/* Recursos Educativos (HU-35) */
+.resource-grid-detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    gap: 1.25rem;
+}
+
+.resource-item {
+    padding: 1.25rem;
+    border-radius: .625rem;
+    background-color: #e8f5ff;
+    border: .0625rem solid #72c4ff;
+    transition: transform 0.2s;
+}
+
+.resource-item:hover {
+    transform: translateY(-0.125rem);
+    cursor: pointer;
+}
+
+.resource-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: .625rem;
+    color: #4E89D7;
+}
+
+.resource-item h4 {
+    margin: 0;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.resource-item p {
+    font-size: .875rem;
+    color: #666;
+    margin-top: .3125rem;
+}
+

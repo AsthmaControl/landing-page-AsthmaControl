@@ -1,0 +1,56 @@
+/* ======================================================= */
+/* ====== ESTILOS ESPECÍFICOS: CONFIGURACIÓN PACIENTE ====== */
+/* (Reutiliza gran parte del CSS de configuración del médico)*/
+/* ======================================================= */
+
+.config-description {
+    font-size: .9375rem;
+    color: #666;
+    margin-bottom: 1.5625rem;
+}
+
+/* Permisos y Compartición (HU-31, HU-42) */
+.permission-settings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5625rem;
+    max-width: 56.25rem;
+}
+
+.perm-group {
+    background-color: #f7f9fc;
+    border: .0625rem solid #e0e0e0;
+    padding: 1.25rem;
+    border-radius: .75rem;
+}
+
+.perm-group h4 {
+    color: #4C6879;
+    margin-top: 0;
+    margin-bottom: .3125rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.perm-status {
+    font-style: italic;
+    font-size: .8125rem;
+    color: #999;
+    margin-bottom: .9375rem;
+    border-bottom: .0625rem dashed #eee;
+    padding-bottom: .625rem;
+}
+
+.toggle-group-perm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem 0;
+    border-bottom: .0625rem solid #f0f0f0;
+}
+
+.toggle-group-perm label {
+    font-size: .9375rem;
+    font-weight: normal;
+    color: #333;
+}

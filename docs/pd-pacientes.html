@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes - Panel Médico</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pd-pacientes.css">
+
+</head>
+
+<body>
+  <div class="sidebar">
+  <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Panel</h2>
+  <ul class="panel-lista">
+    <li><a href="panel-doctor.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+    <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
+    <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
+    <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+    <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+  </ul>
+</div>
+
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Gestión de Pacientes</h2>
+        </header>
+
+        <div class="patient-list-container">
+            <div class="header-actions">
+                <div class="search-bar-container">
+                    <input type="text" placeholder="Buscar paciente por nombre o ID..." class="search-input">
+                    <button class="search-button">🔍</button>
+                </div>
+            </div>
+
+            <table class="patient-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Diagnóstico</th>
+                        <th>Última Adherencia (7 días)</th>
+                        <th>Alertas Activas</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alert-row">
+                        <td>**Mariana Pérez**</td>
+                        <td>12</td>
+                        <td>Asma Moderada</td>
+                        <td>40% (Baja)</td>
+                        <td>⚠️ (3 días sin toma)</td>
+                        <td>
+                            <a href="reporte_mariana.html" class="action-btn report-btn">Ver Reporte</a>
+                            <a href="chat_mariana.html" class="action-btn chat-btn">💬 Chat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Gutiérrez</td>
+                        <td>25</td>
+                        <td>Asma Leve</td>
+                        <td>95%</td>
+                        <td>—</td>
+                        <td>
+                            <a href="reporte_carlos.html" class="action-btn report-btn">Ver Reporte</a>
+                            <a href="chat_carlos.html" class="action-btn chat-btn">💬 Chat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sofía Ramírez</td>
+                        <td>7</td>
+                        <td>Asma Persistente</td>
+                        <td>78%</td>
+                        <td>—</td>
+                        <td>
+                            <a href="reporte_sofia.html" class="action-btn report-btn">Ver Reporte</a>
+                            <a href="chat_sofia.html" class="action-btn chat-btn">💬 Chat</a>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+
+            <p class="table-info">Mostrando 3 de 3 pacientes registrados.</p>
+
+        </div>
+    </div>
+</body>
+</html>

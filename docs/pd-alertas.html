@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas Críticas - Panel Médico</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pd-alertas.css">
+</head>
+
+<body>
+  <div class="sidebar">
+  <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Panel</h2>
+  <ul class="panel-lista">
+    <li><a href="panel-doctor.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+    <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
+    <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
+    <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+    <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+  </ul>
+</div>
+
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Alertas Críticas y Seguimiento</h2>
+        </header>
+
+        <div class="alert-panel-container">
+            <div class="alert-filters">
+                <button class="filter-btn">🔴 Pendientes (3)</button>
+                <button class="filter-btn">🟠 En Seguimiento (0)</button>
+            </div>
+
+            <div class="alert-list">
+                
+                <div class="alert-card critical">
+                    <div class="alert-header">
+                        <h3>Omisión Crítica de Dosis</h3>
+                        <span class="alert-status pending">Pendiente</span>
+                    </div>
+                    <div class="alert-body">
+                        <p class="patient-name">Paciente: Mariana Pérez (12 años)</p>
+                        <p class="alert-detail">Dosis omitida por 4 días consecutivos.</p>
+                        <p class="alert-time">Última dosis registrada: 20/11/2025 - 8:00 AM</p>
+                    </div>
+                    <div class="alert-actions">
+                        <a href="reporte_mariana.html" class="action-btn report-btn">Marcar como atendida</a>
+                        <button class="action-btn track-btn">Marcar en Seguimiento</button>
+                    </div>
+                </div>
+
+                <div class="alert-card warning">
+                    <div class="alert-header">
+                        <h3>Omisión de Dosis Mediana</h3>
+                        <span class="alert-status pending">Pendiente</span>
+                    </div>
+                    <div class="alert-body">
+                        <p class="patient-name">Paciente: Pedro Gómez (8 años)</p>
+                        <p class="alert-detail">Dosis omitida por 2 días consecutivos.</p>
+                        <p class="alert-time">Generada hace 2 horas.</p>
+                    </div>
+                    <div class="alert-actions">
+                        <a href="reporte_pedro.html" class="action-btn report-btn">Marcar como atendida</a>
+                        <button class="action-btn track-btn">Marcar en Seguimiento</button>
+                    </div>
+                </div>
+                
+                <div class="alert-card ongoing">
+                    <div class="alert-header">
+                        <h3>Omisión de Dosis Puntual</h3>
+                        <span class="alert-status pending">Pendiente</span>
+                    </div>
+                    <div class="alert-body">
+                        <p class="patient-name">Paciente: Sofía Ramírez (7 años)</p>
+                        <p class="alert-detail">Dosis de la mañana omitida.</p>
+                        <p class="alert-time">Generada hace 15 horas.</p>
+                    </div>
+                    <div class="alert-actions">
+                        <a href="reporte_pedro.html" class="action-btn report-btn">Marcar como atendida</a>
+                        <button class="action-btn track-btn">Marcar en Seguimiento</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

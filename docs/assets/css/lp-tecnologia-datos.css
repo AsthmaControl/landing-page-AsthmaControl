@@ -1,0 +1,142 @@
+/* ========================================================= */
+/* --- ESTILOS ESPECÍFICOS: TECNOLOGÍA Y DATOS (MEDICOS) --- */
+/* ========================================================= */
+
+.seccion-principal-datos {
+    margin-top: 5rem; /* Espacio después del header fijo */
+    padding: 3rem 18.75rem 2rem 18.75rem; /* Mantiene tu alineación estándar */
+    text-align: center;
+    background-color: #E7F1F5; /* Fondo del color de tu header */
+    border-bottom: 5px solid #FFCC00; /* Línea de color de marca */
+}
+
+.seccion-principal-datos h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    padding-top: 0; /* Anula el padding-top del H1 general */
+    color: #4C6879;
+}
+
+.subtitulo-datos {
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: #666;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+/* Contenedor de los bloques de información */
+.contenedor-innovacion {
+    padding: 5rem 18.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Espacio grande entre bloques */
+}
+
+.bloque-data {
+    padding: 2.5rem;
+    border-left: 5px solid #4C6879; /* Decoración clínica */
+    background-color: #ffffff;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.bloque-data h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4C6879;
+    margin-bottom: 1rem;
+    padding-top: 0;
+}
+
+.bloque-data p, .bloque-data ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.bloque-data ul {
+    list-style: none;
+    padding: 1rem 0 0 0;
+}
+
+.bloque-data ul li {
+    background: url('assets/images/check.png') no-repeat left center; /* Placeholder: Usa un ícono de check de 16px */
+    background-size: 1.25rem;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos de la gráfica simulada */
+.grafica-simulada {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.grafica-simulada img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.pie-grafica {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 0.5rem;
+}
+
+/* Botón de Seguridad */
+.boton-seguridad {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid #FFCC00;
+    color: #4C6879;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-seguridad:hover {
+    background-color: #FFCC00;
+    color: #4C6879;
+}
+
+/* Sección de Llamada Final a la Acción */
+.llamada-final-doctor {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #F8F8F8;
+    margin-top: 2rem;
+}
+
+.llamada-final-doctor h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4C6879;
+    margin-bottom: 1.5rem;
+    padding-top: 0;
+}
+
+.boton-medico-final {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: #FFCC00;
+    color: #4C6879;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.boton-medico-final:hover {
+    transform: scale(1.05);
+    background-color: #f0b800;
+}

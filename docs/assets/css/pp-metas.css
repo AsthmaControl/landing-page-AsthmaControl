@@ -1,0 +1,169 @@
+/* ============================================== */
+/* ====== ESTILOS ESPECÍFICOS: PACIENTE METAS ====== */
+/* ============================================== */
+
+.goals-container {
+    padding: 1.5625rem;
+    margin-top: 1.25rem;
+}
+
+/* Contador de Racha (HU-44) */
+.no-crisis-counter {
+    background: linear-gradient(45deg, #72c4ff, #4E89D7);
+    color: white;
+    padding: 1.875rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.875rem;
+    box-shadow: 0 .5rem .9375rem rgba(0, 77, 162, 0.2);
+}
+
+.crisis-days {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: .3125rem;
+}
+
+.no-crisis-counter h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.no-crisis-counter p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1.5625rem;
+}
+
+.active-goals-section, .achievements-section {
+    background: #fff;
+    border-radius: 1.125rem;
+    padding: 1.5625rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .0625rem solid #eee;
+    padding-bottom: .625rem;
+    margin-bottom: 1.25rem;
+}
+
+.active-goals-section h3, .achievements-section h3 {
+    color: #4C6879;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: .875rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Detalle de Meta (HU-50) */
+.goal-card-detail {
+    border: .0625rem solid #eee;
+    padding: 1.25rem;
+    border-radius: .75rem;
+    margin-bottom: .9375rem;
+}
+
+.goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .625rem;
+}
+
+.goal-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.125rem;
+}
+
+.goal-status {
+    padding: .25rem .625rem;
+    border-radius: .9375rem;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.goal-status.active { background-color: #d8f5d8; color: #5cb85c; }
+.goal-status.paused { background-color: #fff3cd; color: #ffcc00; }
+
+.goal-description {
+    font-size: .875rem;
+    color: #666;
+    margin-bottom: .9375rem;
+}
+
+.progress-bar-container.large {
+    height: 1.875rem;
+    margin-bottom: .9375rem;
+}
+
+.progress-label.large {
+    font-size: .875rem;
+    color: white;
+    text-shadow: 0 0 .125rem rgba(0,0,0,0.4);
+}
+
+.goal-actions button {
+    margin-right: .625rem;
+}
+
+.edit-btn { background-color: #72c4ff; color: white; }
+.remove-btn { background-color: #ff744e; color: white; }
+
+/* Muro de Logros (HU-12, HU-29) */
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .9375rem;
+}
+
+.achievement {
+    text-align: center;
+    padding: .9375rem;
+    border-radius: .625rem;
+    border: .0625rem solid #eee;
+}
+
+.achievement.unlocked {
+    background-color: #e8f5ff;
+    border-color: #72c4ff;
+}
+
+.achievement.locked {
+    background-color: #f9f9f9;
+    opacity: 0.6;
+}
+
+.badge-icon {
+    font-size: 2.25rem;
+    display: block;
+    margin-bottom: .3125rem;
+}
+
+.achievement h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.achievement p {
+    font-size: .75rem;
+    color: #666;
+    margin: .3125rem 0 0 0;
+}

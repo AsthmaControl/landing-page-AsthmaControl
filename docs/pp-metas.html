@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas y Logros - Control de Asma</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/pp-metas.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Mi Control</h2>
+        <ul class="panel-lista">
+            <li><a href="panel-paciente.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+            <li><a href="pp-historial.html"><img src="assets/images/report-icon.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Historial y Síntomas</a></li>
+            <li><a href="pp-metas.html"><img src="assets/images/goal-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Metas y Logros</a></li>
+            <li><a href="pp-logistica.html" class="active-link"><img src="assets/images/calendar-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Logística y Citas</a></li>
+            <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
+            <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+            <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Mi Progreso y Motivación</h2>
+        </header>
+
+        <div class="goals-container">
+            
+            <div class="no-crisis-counter">
+                <span class="crisis-days">21</span>
+                <h3>Días Consecutivos sin Crisis</h3>
+                <p>¡Este es un nuevo récord! ¡Sigue así, estás demostrando un gran control de tu asma!</p>
+            </div>
+
+            <div class="goals-grid">
+                
+                <div class="active-goals-section">
+                    <div class="section-header">
+                        <h3>Metas Activas</h3>
+                        <button class="action-btn blue-btn small-btn">➕ Nueva Meta (HU-02)</button>
+                    </div>
+                    
+                    <div class="goal-card-detail">
+                        <div class="goal-header">
+                            <h4>Control de Dosis Matutina</h4>
+                            <span class="goal-status active">ACTIVA</span>
+                        </div>
+                        <p class="goal-description">Registrar la dosis de mantenimiento de la mañana a tiempo por 14 días.</p>
+                        <div class="progress-bar-container large">
+                            <div class="progress-bar" style="width: 80%; background-color: #5cb85c;"></div>
+                            <span class="progress-label large">12 / 14 Días (85.7%)</span>
+                        </div>
+                        <div class="goal-actions">
+                            <button class="action-btn small-btn edit-btn">Editar</button>
+                            <button class="action-btn small-btn remove-btn">Eliminar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-card-detail">
+                        <div class="goal-header">
+                            <h4>Reducir Tos Nocturna</h4>
+                            <span class="goal-status paused">PAUSADA</span>
+                        </div>
+                        <p class="goal-description">Disminuir los episodios de tos nocturna a menos de 2 por semana.</p>
+                        <div class="progress-bar-container large">
+                            <div class="progress-bar" style="width: 40%; background-color: #ffcc00;"></div>
+                            <span class="progress-label large">40% Completado</span>
+                        </div>
+                        <div class="goal-actions">
+                            <button class="action-btn small-btn edit-btn">Reactivar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements-section">
+                    <h3>Muro de Logros 🏆</h3>
+                    <p class="section-subtitle">¡Colecciona insignias por tu esfuerzo y consistencia!</p>
+                    
+                    <div class="achievement-grid">
+                        <div class="achievement unlocked">
+                            <span class="badge-icon">🌟</span>
+                            <h4>Pionero</h4>
+                            <p>Registro de la primera semana completa.</p>
+                        </div>
+                         <div class="achievement unlocked">
+                            <span class="badge-icon">🏅</span>
+                            <h4>Máquina de Adherencia</h4>
+                            <p>90% de adherencia en el último mes.</p>
+                        </div>
+                        <div class="achievement locked">
+                            <span class="badge-icon">🔒</span>
+                            <h4>Experto en Asma</h4>
+                            <p>Lee 5 artículos educativos.</p>
+                        </div>
+                        <div class="achievement locked">
+                            <span class="badge-icon">🔒</span>
+                            <h4>Respiración Maestra</h4>
+                            <p>Racha de 30 días sin crisis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

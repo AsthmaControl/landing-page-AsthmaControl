@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística y Recursos - Control de Asma</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/pp-logistica.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Mi Control</h2>
+        <ul class="panel-lista">
+            <li><a href="panel-paciente.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+            <li><a href="pp-historial.html"><img src="assets/images/report-icon.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Historial y Síntomas</a></li>
+            <li><a href="pp-metas.html"><img src="assets/images/goal-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Metas y Logros</a></li>
+            <li><a href="pp-logistica.html" class="active-link"><img src="assets/images/calendar-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Logística y Citas</a></li>
+            <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
+            <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+            <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Gestión de Logística y Recursos</h2>
+        </header>
+
+        <div class="logistics-container">
+            
+            <div class="logi-section">
+                <h3>🗓️ Mis Próximas Citas Médicas (HU-09)</h3>
+                <div class="appointment-list">
+                    <div class="appointment-item">
+                        <span class="app-date">05 DIC</span>
+                        <div class="app-info">
+                            <h4>Control con Neumólogo Dr. Rodrigo</h4>
+                            <p>Clínica Central, 10:00 AM. Motivo: Revisión Anual.</p>
+                        </div>
+                        <button class="action-btn small-btn edit-btn">Editar</button>
+                    </div>
+                     <div class="appointment-item">
+                        <span class="app-date">15 ENE</span>
+                        <div class="app-info">
+                            <h4>Vacuna contra la Gripe (Recordatorio)</h4>
+                            <p>Centro de Salud. Asegurar stock.</p>
+                        </div>
+                        <button class="action-btn small-btn edit-btn">Añadir Detalles</button>
+                    </div>
+                </div>
+                 <button class="action-btn blue-btn" style="margin-top: 20px;">➕ Añadir Nueva Cita</button>
+            </div>
+            
+            <div class="logi-section">
+                <h3>💊 Inventario de Medicamentos (HU-16)</h3>
+                <table class="inventory-table">
+                    <thead>
+                        <tr><th>Medicamento</th><th>Unidades Restantes</th><th>Alerta de Renovación</th><th>Acción</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>**Mantenimiento** (Fluticasona)</td><td>10 días</td><td class="alert-low">⚠️ Baja</td><td><button class="action-btn small-btn report-btn">Actualizar Stock</button></td></tr>
+                        <tr><td>**Rescate** (Salbutamol)</td><td>80 dosis</td><td class="alert-ok">✅ Suficiente</td><td><button class="action-btn small-btn report-btn">Actualizar Stock</button></td></tr>
+                    </tbody>
+                </table>
+                <p class="inventory-note">Establece una alerta de renovación 5 días antes de que se acabe el stock.</p>
+            </div>
+
+            <div class="logi-section">
+                <h3>📚 Biblioteca de Recursos y Guías (HU-35)</h3>
+                <div class="resource-grid-detail">
+                    <div class="resource-item">
+                        <span class="resource-icon">🎥</span>
+                        <h4>Técnica de Uso Correcto del Inhalador</h4>
+                        <p>Video demostrativo paso a paso para maximizar la efectividad.</p>
+                    </div>
+                    <div class="resource-item">
+                        <span class="resource-icon">📝</span>
+                        <h4>Guía: Plan de Acción de Asma</h4>
+                        <p>Instrucciones claras para manejar diferentes niveles de crisis (HU-06).</p>
+                    </div>
+                     <div class="resource-item">
+                        <span class="resource-icon">🧘</span>
+                        <h4>Ejercicios de Respiración Profunda</h4>
+                        <p>Clase en video para mejorar la capacidad pulmonar y relajación.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

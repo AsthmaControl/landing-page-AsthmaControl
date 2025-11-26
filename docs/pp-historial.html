@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial y Síntomas - Control de Asma</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/pp-historial.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Mi Control</h2>
+        <ul class="panel-lista">
+            <li><a href="panel-paciente.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+            <li><a href="pp-historial.html"><img src="assets/images/report-icon.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Historial y Síntomas</a></li>
+            <li><a href="pp-metas.html"><img src="assets/images/goal-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Metas y Logros</a></li>
+            <li><a href="pp-logistica.html" class="active-link"><img src="assets/images/calendar-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Logística y Citas</a></li>
+            <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
+            <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+            <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Historial Clínico y Bitácoras</h2>
+        </header>
+
+        <div class="history-container">
+            <div class="history-toolbar">
+                <select class="filter-select">
+                    <option>Últimos 7 días</option>
+                    <option>Últimos 30 días</option>
+                    <option>Últimos 6 meses</option>
+                </select>
+                <button class="action-btn report-btn">Descargar PDF Completo</button>
+            </div>
+
+            <div class="chart-section">
+                <h3>Tendencia de Síntomas y Uso de Rescate</h3>
+                <div class="chart-box">
+                    <img src="assets/images/paciente-grafico.png" height="350" width="500">
+                </div>
+            </div>
+
+            <div class="bitacora-grid">
+                
+                <div class="bitacora-section">
+                    <h3>Bitácora de Crisis y Eventos (HU-49)</h3>
+                    <div class="bitacora-list">
+                        <div class="bitacora-item critical-event">
+                            <span class="bitacora-icon">🚨</span>
+                            <div class="bitacora-info">
+                                <h4>Crisis Severa</h4>
+                                <p>Gatillante: Alergia a polen. Uso 3 dosis de rescate.</p>
+                            </div>
+                            <span class="bitacora-time">18/11/2025 - 11:30 AM</span>
+                        </div>
+                         <div class="bitacora-item mild-event">
+                            <span class="bitacora-icon">🟡</span>
+                            <div class="bitacora-info">
+                                <h4>Ataque Leve</h4>
+                                <p>Gatillante: Ejercicio físico intenso. Uso 1 dosis de rescate.</p>
+                            </div>
+                            <span class="bitacora-time">20/11/2025 - 4:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bitacora-section">
+                    <h3>Bitácora Detallada de Rescate (HU-23)</h3>
+                    <table class="rescue-table">
+                        <thead>
+                            <tr><th>Fecha/Hora</th><th>Dosis</th><th>Motivo</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>20/11/2025 4:00 PM</td><td>1 Inhalación</td><td>Ejercicio</td></tr>
+                            <tr><td>18/11/2025 11:45 AM</td><td>2 Inhalaciones</td><td>Crisis Severa</td></tr>
+                            <tr><td>18/11/2025 11:30 AM</td><td>1 Inhalación</td><td>Crisis Severa</td></tr>
+                            <tr><td>15/11/2025 8:00 AM</td><td>1 Inhalación</td><td>Tos matutina</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="pattern-insight">💡 **Patrón de Riesgo (HU-20):** La mayoría de las crisis severas ocurren entre 10 AM y 1 PM.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

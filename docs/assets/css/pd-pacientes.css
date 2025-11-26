@@ -1,0 +1,161 @@
+/* ======================================= */
+/* ====== ESTILOS ESPECÍFICOS: PACIENTES ====== */
+/* ======================================= */
+
+/* Estilo para el link activo en el sidebar */
+.sidebar ul li a.active-link {
+    background: rgba(212, 224, 229, 0.796);
+    border-radius: .5rem;
+    font-weight: 600; /* Hace que el texto se destaque */
+}
+
+.main-content h2 {
+    font-size: 1.75rem;
+    color: #4C6879;
+    margin-top: .625rem;
+    margin-bottom: 1.25rem;
+}
+
+.patient-list-container {
+    padding: 1.5625rem;
+    margin-top: 1.25rem;
+    background-color: #fff;
+    border-radius: 1.125rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+/* Acciones de Cabecera (Búsqueda y Botón de Registro) */
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.search-bar-container {
+    display: flex;
+    border: .0625rem solid #ddd;
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 60%;
+    max-width: 31.25rem;
+}
+
+.search-input {
+    border: none;
+    padding: .625rem .9375rem;
+    flex-grow: 1;
+    font-size: .9375rem;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-button {
+    background-color: #E7F1F5;
+    border: none;
+    padding: .625rem .9375rem;
+    cursor: pointer;
+    color: #4C6879;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.search-button:hover {
+    background-color: #d4e0e4;
+}
+
+.add-patient-btn {
+    padding: .625rem 1.25rem;
+    font-size: .9375rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.blue-btn {
+    background: #72c4ff; /* Color similar al dash-btn blue */
+    color: white;
+}
+
+.blue-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Tabla de Pacientes */
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.25rem;
+}
+
+.patient-table th, .patient-table td {
+    padding: .9375rem;
+    text-align: left;
+    border-bottom: .0625rem solid #f0f0f0;
+}
+
+.patient-table th {
+    background-color: #f7f7f7;
+    color: #4C6879;
+    font-weight: 600;
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+
+.patient-table tbody tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* Estilo para fila de alerta (HU-11) */
+.alert-row {
+    background-color: #fff7f7; /* Fondo sutil de alerta */
+    font-weight: 500;
+}
+
+.alert-row td {
+    color: #cc0000; /* Texto de alerta */
+}
+
+/* Botones de Acción dentro de la Tabla */
+.action-btn {
+    display: inline-block;
+    padding: .4375rem .75rem;
+    margin-right: .5rem;
+    border-radius: .375rem;
+    text-decoration: none;
+    font-size: .8125rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+/* Botón Ver Reporte (HU-13, HU-48) */
+.report-btn {
+    background-color:#70c380; /* Color principal */
+    color: white;
+}
+
+.report-btn:hover {
+    background-color: #66b075;
+}
+
+/* Botón Chat (HU-40) */
+.chat-btn {
+    background-color: #9bffbe; /* Color verde/verde-menta */
+    color: #4C6879;
+}
+
+.chat-btn:hover {
+    background-color: #79e0a2;
+}
+
+.table-info {
+    margin-top: 1.25rem;
+    font-size: .8125rem;
+    color: #999;
+    text-align: right;
+}

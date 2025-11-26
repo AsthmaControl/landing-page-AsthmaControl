@@ -1,0 +1,153 @@
+/* =========================================== */
+/* ====== ESTILOS ESPECÍFICOS: ALERTAS ====== */
+/* =========================================== */
+
+.alert-panel-container {
+    padding: 1.5625rem;
+    margin-top: 1.25rem;
+    background-color: #fff;
+    border-radius: 1.125rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+/* Filtros de estado de alerta */
+.alert-filters {
+    display: flex;
+    gap: .9375rem;
+    margin-bottom: 1.875rem;
+    border-bottom: .125rem solid #eee;
+    padding-bottom: .9375rem;
+}
+
+.filter-btn {
+    padding: .5rem .9375rem;
+    border: .0625rem solid #ddd;
+    border-radius: 1.25rem;
+    background-color: #f9f9f9;
+    color: #4C6879;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #eee;
+}
+
+/* Lista de Alertas */
+.alert-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 1.5625rem;
+}
+
+.alert-card {
+    background: #fff;
+    border-radius: .9375rem;
+    padding: 1.25rem;
+    box-shadow: 0 .125rem .625rem rgba(0,0,0,0.1);
+    border-left: .3125rem solid; /* Usado para indicar el nivel de criticidad */
+    transition: transform 0.2s;
+}
+
+.alert-card:hover {
+    transform: translateY(-0.1875rem);
+}
+
+/* Colores de Alerta */
+.critical { border-left-color: white; }
+.warning { border-left-color: white; }
+.ongoing { border-left-color: white; }
+
+
+.alert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .9375rem;
+}
+
+.alert-icon {
+    font-size: 1.5rem;
+    margin-right: .625rem;
+}
+
+.alert-header h3 {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.alert-status {
+    font-size: .75rem;
+    font-weight: bold;
+    padding: .25rem .5rem;
+    border-radius: .75rem;
+}
+
+.alert-status.pending { background-color: #ff744e; color: white; }
+.alert-status.tracking { background-color: #72c4ff; color: white; }
+.alert-status.resolved { background-color: #9bffbe; color: #4C6879; }
+
+
+.alert-body {
+    padding-bottom: .9375rem;
+    border-bottom: .0625rem dashed #eee;
+    margin-bottom: .9375rem;
+}
+
+.patient-name {
+    font-weight: 700;
+    margin-bottom: .3125rem;
+    color: #4C6879;
+}
+
+.alert-detail {
+    margin: .3125rem 0;
+    font-size: .9375rem;
+    line-height: 1.4;
+}
+
+.alert-time {
+    font-size: .75rem;
+    color: #999;
+    margin-top: .625rem;
+}
+
+/* Acciones de la Alerta (Botones) */
+.alert-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: .625rem;
+}
+
+.alert-actions .action-btn {
+    padding: .5rem .9375rem;
+    font-size: .875rem;
+    border-radius: .375rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+}
+
+.track-btn {
+    background-color: #96c9ff; /* Color principal */
+    color: white;
+    border: none;
+}
+
+.track-btn:hover {
+    background-color: #83afdd;
+}
+
+.resolve-btn {
+    background-color: #9bffbe;
+    color: #4C6879;
+    border: .0625rem solid #9bffbe;
+}
+
+.resolve-btn:hover {
+    background-color: #7db993;
+}

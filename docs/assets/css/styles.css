@@ -1,7 +1,7 @@
 
 
 main {
-  min-height: 2000px; /* fuerza scroll para pruebas */
+  min-height: 125rem; /* fuerza scroll para pruebas */
 }
 
 html, body {
@@ -47,27 +47,27 @@ body::before {
 }
 
 h1{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 
 .AsthmaControl{
-    padding-top: 0px;
+    padding-top: 0rem;
     text-decoration: none;
     color: #4C6879;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: .25rem;
 }
 
 .AsthmaControl-texto{
-    padding-top: 3px;
-    font-size: 12.5px;
+    padding-top: .1875rem;
+    font-size: .7813rem;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter; /* o 500 según el grosor que quieras */
-    letter-spacing: 1px;
+    letter-spacing: .0625rem;
 }
 
 .top-header{
@@ -75,67 +75,67 @@ h1{
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     background-color: #E7F1F5;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     z-index: 9999;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 .0625rem .375rem rgba(0,0,0,0.05);
 }
 
 
 .barra-de-navegacion{
     list-style: none;
     display: flex;      /* coloca los items en una fila */
-    gap: 75px;          /* separa los enlaces */
+    gap: 4.6875rem;          /* separa los enlaces */
     margin: 0 auto;
     padding: 0;
     align-items: left; /* centra verticalmente los enlaces */
     list-style: none;
 }
 .barra-de-navegacion a{
-    padding-top: 0px;
-    font-size: 12.5px;
+    padding-top: 0rem;
+    font-size: .7813rem;
     color: #4C6879;
     text-decoration: none;
 }
 
 .bienvenida {
-        margin-top: 120px; /* deja lugar para el header fixed */
+        margin-top: 7.5rem; /* deja lugar para el header fixed */
 
-    margin-left: 300px;
+    margin-left: 18.75rem;
     display: flex;
     flex-direction: column; /* apila los elementos verticalmente */
-    gap: 20px; /* distancia vertical entre cada elemento interno */
+    gap: 1.25rem; /* distancia vertical entre cada elemento interno */
 }
 
 .div-gral{
-    padding-top: 100px;
+    padding-top: 6.25rem;
 display:flex;
 justify-content: space-between;
 align-items: center;
-max-width: 1200px;
+max-width: 75rem;
 margin: 0 auto;
-gap:75px;
+gap:4.6875rem;
 }
 
 .div-texto {
-  font-size: 20px;
+  font-size: 1.25rem;
   flex: 1;
 }
 
 .div-texto p {
-    padding-top: 64px;
-  width: 750px;
+    padding-top: 4rem;
+  width: 46.875rem;
   text-align: justify;
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
   color: black;
 }
 
 .div-texto h2 {
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
   color: black;
 }
 
@@ -143,41 +143,41 @@ gap:75px;
   display: block;
   position: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
 }
 
 .bienvenida h1{
-    font-weight: 200px;
-    letter-spacing: -1px;
+    font-weight: 12.5rem;
+    letter-spacing: -0.0625rem;
 }
 .rating{
     align-items: center;
     display: flex;
-    gap: 4px;
+    gap: .25rem;
 }
 
 .rating-texto{
     color: rgb(139, 139, 139);
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 
 .decoracion-cuadrado {
     display: inline-block;      /* ajusta al tamaño del contenido */
     background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    padding: 20px;             /* espacio alrededor del texto */
-    margin-top: 20px;          /* espacio desde la barra o sección superior */
+    box-shadow: 0 .125rem .375rem rgba(0,0,0,0.1);
+    border-radius: .625rem;
+    padding: 1.25rem;             /* espacio alrededor del texto */
+    margin-top: 1.25rem;          /* espacio desde la barra o sección superior */
 }
 
 
 .beneficio-item {
     display: flex;           /* icono y texto en la misma fila */
     align-items: center;     /* centra verticalmente */
-    gap: 10px;               /* espacio entre icono y texto */
-    padding: 15px;           /* espacio dentro del cuadrado */
+    gap: .625rem;               /* espacio entre icono y texto */
+    padding: .9375rem;           /* espacio dentro del cuadrado */
         transition: transform 0.3s ease; /* transición suave */
     cursor: pointer; /* opcional, cambia el cursor al pasar */
 }
@@ -191,44 +191,44 @@ gap:75px;
     margin-top: 2.5%;
     display: flex;
     flex-direction: row;
-    margin-left: 300px;
+    margin-left: 18.75rem;
     gap: 15%;
 }
 
 .beneficios h1{
     font-weight: 500;
-    font-size: 40px;
-    margin-left: 300px;
+    font-size: 2.5rem;
+    margin-left: 18.75rem;
 }
 
 .seccion-intermedia h1{
         padding-top: 10%;
-        margin-left: 300px;
+        margin-left: 18.75rem;
         font-weight: 500;
 
 }
 
 .seccion-intermedia .imagenes img.first-image {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    height: 300px;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-left-radius: 1.5625rem;
+    height: 18.75rem;
     width: auto;  /* mantiene proporción */
     display: block;
 }
 
 .seccion-intermedia .imagenes img.second-image {
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    height: 300px;
+    border-top-right-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    height: 18.75rem;
     width: auto;
     display: block;
 }
 
 .seccion-intermedia .imagenes {
-    border-radius: 25px;
+    border-radius: 1.5625rem;
     display: flex;        /* alinea los hijos en fila */
-    margin-left: 300px;   /* opcional, para alinear con texto */
-    margin-top: 50px;     /* separación desde el título */
+    margin-left: 18.75rem;   /* opcional, para alinear con texto */
+    margin-top: 3.125rem;     /* separación desde el título */
 }
 
 
@@ -236,32 +236,56 @@ gap:75px;
 
 .preguntas-frecuentes {
     padding-top: 10%;
-  margin: 40px auto;        /* centra el bloque horizontalmente */
-  max-width: 900px;         /* ancho máximo para que se vean bien las 2 columnas */
+    /* Centra el bloque en la página */
+    margin: 2.5rem auto; 
+    /* Define el ancho máximo (ej. 56.25rem) */     
+    max-width: 56.25rem;        
+    /* Centra el título <h1> */
+}
+.preguntas-frecuentes h1 {
+    /* Asegúrate de que no haya ninguna regla aquí que lo fuerce a la izquierda */
+    /* Por ejemplo, borra si tienes: text-align: left; */
+    /* Debería ser: */
+    margin-left: 14.0625rem;
+    margin-bottom: 1.875rem; /* (o el espaciado que necesites) */
 }
 
 .preguntas-cuadro {
     margin-top: 10%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  gap: 100px;
-  padding: 60px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  box-sizing: border-box;
+    
+    /* Mantenemos el centrado de bloque con margen automático */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* 🔑 CLAVE: Define un ancho fijo o máximo para que el margen auto funcione. 
+       Usaremos un valor menor que 56.25rem para que el grid no se "estire" demasiado 
+       y se centre dentro del 56.25rem del contenedor padre. */
+    width: 50rem; /* <--- PRUEBA CON ESTE VALOR */
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 6.25rem;
+    padding: 3.75rem;
+    background-color: #fff;
+    border-radius: .625rem;
+    box-shadow: 0 .125rem .375rem rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    
+    /* Aseguramos la transición para el hover */
+    transition: transform 0.3s ease; 
 }
-
 .pregunta-item {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  position: relative; /* <--- importante para que el tooltip se posicione respecto a este contenedor */
+    display: flex;
+    /* Usamos flex-start para alinear el icono con la primera línea de texto */
+    align-items: flex-start; 
+    /* Reducimos el espacio entre icono y texto si es necesario */
+    gap: 1.25rem; 
+    position: relative; 
 }
 
 .pregunta-texto {
 
-  font-size: 20px;
+  font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -273,21 +297,34 @@ gap:75px;
     transform: scale(1.1); /* agranda al 110% */
 }
 
+.parte-final {
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
+    width: 100%; 
+    /* Centra el texto y los elementos "inline" dentro del contenedor */
+    text-align: center; 
+    /* Añade espacio si es necesario */
+    margin-top: 3.125rem; 
+}
+
+/* 2. El título ya está centrado con la regla anterior, pero confirmamos su estilo */
 .parte-final h1{
-    font-size: 30px;
-    text-align: center;
+    font-size: 1.875rem;
+    /* Esto ya lo tenías y es correcto */
+    text-align: center; 
+    /* Elimina cualquier margin-left o margin-right */
+    margin: 0; 
 }
 
 .boton-descargar {
     text-decoration: none;
     display: inline-block;       /* se ajusta al texto */
-    padding: 12px 25px;          /* espacio dentro del botón */
+    padding: .75rem 1.5625rem;          /* espacio dentro del botón */
     background-color: #FFCC00;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: .5rem;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -336,8 +373,8 @@ gap:75px;
 
 .celular-app {
     position: absolute;
-    right: 400px;
-    top: 35%;
+    right: 25rem;
+    top: 55%;
     transform: translateY(-50%); /* mantiene centrado vertical */
     transition: transform 0.3s ease;
 }
@@ -353,7 +390,7 @@ gap:75px;
 /* para centrarlo en la página */
 .boton-descargar-container {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .footer{
@@ -361,31 +398,114 @@ gap:75px;
     background-color: #E7F1F5;
     color:#4C6879;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     position: relative;
     width: 100%;
-    font-size: 12px;
+    font-size: .75rem;
+}
+
+/* --- Nuevos Estilos para la Conexión con el Médico --- */
+
+.seccion-medico {
+    padding: 5rem 0;
+    background-color: #4C6879; /* Usando el color azul/gris de tu marca para contraste */
+    color: #fff;
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+.medico-contenido {
+    max-width: 62.5rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.seccion-medico h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding-top: 0; /* Anula el padding-top general */
+}
+
+.seccion-medico p {
+    font-size: 1.125rem;
+    max-width: 50rem;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.5;
+}
+
+.medico-lista-puntos {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem;
+    margin-bottom: 3.125rem;
+}
+
+.medico-punto {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.875rem;
+    border-radius: .625rem;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.medico-punto:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.medico-punto h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: .625rem;
+    color: #FFCC00; /* Usando el color de acento amarillo */
+    padding-top: 0;
+}
+
+.medico-punto p {
+    font-size: .9375rem;
+    margin: 0;
+    max-width: none;
+}
+
+.boton-doctor-cta {
+    text-decoration: none;
+    display: inline-block;
+    padding: .9375rem 1.875rem;
+    background-color: #FFCC00; /* Color de acento */
+    color: #4C6879; /* Texto oscuro para contraste */
+    font-size: 1.125rem;
+    font-weight: 700;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-doctor-cta:hover {
+    background-color: #f0b800;
+    transform: scale(1.05);
 }
 
 .about-botones{
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-top:60px;
+    padding-top:3.75rem;
     flex-direction: column;
-    gap: 20px;
-    border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 20px;
-    width: 900px;
+    gap: 1.25rem;
+    border-bottom: .0625rem solid #d9d9d9;
+    padding-bottom: 1.25rem;
+    width: 56.25rem;
     margin: 0 auto;
 
 }
 /* Botones de App */
 #botones-app {
-    gap: 12px;
+    gap: .75rem;
     display: flex;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     align-items: center;
 }
 
@@ -404,18 +524,18 @@ gap:75px;
     font-weight: 400;
     visibility: hidden;
     opacity: 0;
-    width: 250px;
+    width: 15.625rem;
     background-color: #4E89D7;
     color: white;
     text-align: left;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
+    border: .0625rem solid #ddd;
+    border-radius: .5rem;
+    padding: .625rem;
     position: absolute;
     z-index: 10;
-    top: -10px;      /* ajusta según convenga */
-    left: 60px;      /* más cerca del texto y el icono */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    top: -0.625rem;      /* ajusta según convenga */
+    left: 3.75rem;      /* más cerca del texto y el icono */
+    box-shadow: 0 .125rem .5rem rgba(0,0,0,0.1);
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
@@ -428,30 +548,30 @@ gap:75px;
 
 
 .funciones{
-    padding: 100px;
+    padding: 6.25rem;
     text-align: center;
 }
 
 .funciones-de-la-app{
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
     flex-direction: row;
     margin: 0 auto;
     display: flex;
-    padding-top: 100px;
+    padding-top: 6.25rem;
     justify-content: center;
 }
 
 
 .funciones-de-la-app p{
     font-weight: 500;
-    font-size: 24px;
-    padding-bottom: 75px;
+    font-size: 1.5rem;
+    padding-bottom: 4.6875rem;
 }
 
 .funciones-de-la-app{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 1.875rem;
     justify-items: center;
 }
 
@@ -459,7 +579,7 @@ gap:75px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 3.125rem;
 }
 
 .funcion-de-la-app img:hover{
@@ -471,25 +591,25 @@ gap:75px;
 }
 
 .div-ayuda h2{
-    font-size: 32px;
+    font-size: 2rem;
 }
 .div-ayuda-p{
-    width: 400px;
+    width: 25rem;
 }
 
 .div-ayuda-p p{
-    margin-top: 10px;
+    margin-top: .625rem;
     justify-content: justify;
 }
 .div-ayuda{
     margin-left: 0 auto;
     margin-right: 0 auto;
-        margin-top: 120px; /* deja lugar para el header fixed */
+        margin-top: 7.5rem; /* deja lugar para el header fixed */
     display: flex;
     flex-direction: row; /* apila los elementos verticalmente */
     justify-content: center;
     align-items: flex-start;
-    gap: 75px;
+    gap: 4.6875rem;
 
 }
 
@@ -500,24 +620,24 @@ gap:75px;
 }
 
 .campo input{
-    border-radius: 10px;
+    border-radius: .625rem;
 color: rgb(158, 158, 158);
-border: 2px solid #4C6879;
-  padding-top: 10px;     /* empuja el texto hacia arriba */
+border: .125rem solid #4C6879;
+  padding-top: .625rem;     /* empuja el texto hacia arriba */
   box-sizing: border-box;}
 
 .campo label{
-    font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-top: .9375rem;
+    margin-bottom: .9375rem;
 }
 
 .formulario-ayuda textarea {
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  border: 2px solid #4C6879;
-  padding: 10px; /* ahora sí, el texto y placeholder quedan arriba */
+  width: 18.75rem;
+  height: 9.375rem;
+  border-radius: .625rem;
+  border: .125rem solid #4C6879;
+  padding: .625rem; /* ahora sí, el texto y placeholder quedan arriba */
   box-sizing: border-box;
   resize: none;
 }
@@ -525,11 +645,11 @@ border: 2px solid #4C6879;
 .enviar-formulario{
     font-weight: 600;
     background-color: #FFCC00;
-    padding: 5px 10px 5px 10px;
-    margin-top: 20px;
+    padding: .3125rem .625rem .3125rem .625rem;
+    margin-top: 1.25rem;
     color: white;
-    border-radius: 10px;
-    border: 1px solid #FFCC00;
+    border-radius: .625rem;
+    border: .0625rem solid #FFCC00;
     cursor: pointer;
 }
 
@@ -538,17 +658,17 @@ border: 2px solid #4C6879;
   background: none;
   border: none;
   color: #4C6879;
-  font-size: 28px;
+  font-size: 1.75rem;
   cursor: pointer;
 }
 
 input[type="month"] {
-    border-radius: 10px;
+    border-radius: .625rem;
     color: rgb(158, 158, 158);
-    border: 2px solid #4C6879;
-    padding: 10px; /* más espacio para que no se vea cortado */
-    font-size: 16px;
-    width: 300px;  /* coincide con tus textareas */
+    border: .125rem solid #4C6879;
+    padding: .625rem; /* más espacio para que no se vea cortado */
+    font-size: 1rem;
+    width: 18.75rem;  /* coincide con tus textareas */
     box-sizing: border-box;
     background-color: white;
 }
@@ -556,42 +676,42 @@ input[type="month"] {
 
 /* FOOTER NUEVO */
 .footer {
-  margin-top: 80px;
+  margin-top: 5rem;
   background-color: #E7F1F5;
   color: #4C6879;
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   text-align: center;
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .footer-contenedor {
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 1.5625rem;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .footer-links,
 .footer-politicas,
 .footer-social {
   display: flex;
-  gap: 25px;
+  gap: 1.5625rem;
 }
 
 .footer-links a,
 .footer-politicas a {
   color: #4C6879;
-  font-size: 13px;
+  font-size: .8125rem;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -602,8 +722,8 @@ input[type="month"] {
 }
 
 .footer-social img {
-  height: 22px;
-  width: 22px;
+  height: 1.375rem;
+  width: 1.375rem;
   opacity: 0.8;
   transition: 0.3s;
 }
@@ -614,16 +734,723 @@ input[type="month"] {
 }
 
 .footer-copy {
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 1.25rem;
+  font-size: .75rem;
   opacity: 0.8;
 }
 
 /* Footer Responsive */
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
   .footer-links,
   .footer-politicas {
     flex-direction: column;
-    gap: 10px;
+    gap: .625rem;
   }
+}
+
+
+/* ======= SIDEBAR ======= */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 14.375rem;
+  height: 100%;
+  background: #E7F1F5;
+  color: #4C6879;
+  padding: 1.25rem 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 1.25rem 0;
+}
+
+.sidebar ul li a {
+  color: #4C6879;
+  text-decoration: none;
+  font-size: 1.0625rem;
+  padding: .75rem 1.25rem;
+  display: block;
+  transition: background 0.2s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(212, 224, 229, 0.796);
+  border-radius: .5rem;
+}
+
+/* ======= MAIN CONTENT ======= */
+.main-content {
+  margin-left: 14.375rem;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* ======= RESPONSIVE ======= */
+.toggle-btn {
+  display: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+@media (max-width: 48rem) {
+  .sidebar {
+    left: -14.375rem;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+
+.dashboard-container {
+  margin-left: 16.25rem;
+  padding: 1.5625rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Encabezado */
+.welcome-text {
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  gap: .9375rem;
+  margin-bottom: 1.5625rem;
+}
+
+.profile-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.profile-info p {
+  margin: .125rem 0 0 0;
+  color: #666;
+}
+
+/* Estadísticas rápidas */
+.stats-row {
+  display: flex;
+  gap: .9375rem;
+  margin-bottom: 1.5625rem;
+}
+
+.stat-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 1.125rem;
+  padding: 1.125rem;
+  box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.stat-card h4 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.stat-card p {
+  color: #555;
+  margin: .3125rem 0 0 0;
+}
+
+/* Botones grandes */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.dash-btn {
+  display: block;
+  border-radius: 2rem;
+  padding: 1.5625rem .625rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 .25rem .75rem rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.dash-btn:hover {
+  transform: scale(1.04);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.dash-btn h3 {
+  margin: .3125rem 0;
+  font-size: 1.25rem;
+}
+
+.dash-btn p {
+  margin: 0;
+  font-size: .875rem;
+  opacity: 0.9;
+}
+
+/* Colores */
+.alert { background: linear-gradient(#ffa175, #ff744e); }
+.blue { background: linear-gradient(#7be9ff, #72c4ff) ; }
+.pink { background: linear-gradient(#ff98e0, #ff98bf); }
+.green { background: linear-gradient(#9bffbe, #88bb95); }
+
+/* Extra sección */
+.extra-box {
+  background: #ffffff;
+  margin-top: 1.875rem;
+  padding: 1.25rem;
+  border-radius: 1.125rem;
+  text-align: center;
+  box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+.extra-box h4 {
+  margin: 0 0 .5rem 0;
+}
+
+/* ================================================= */
+/* ====== ESTILOS ESPECÍFICOS: PACIENTE DASHBOARD ====== */
+/* ================================================= */
+
+.patient-dashboard-container {
+    margin-left: 1.25rem;
+    padding: 1.5625rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* FILA DE ADHERENCIA */
+.adherence-row {
+    display: flex;
+    gap: 1.5625rem;
+    margin-bottom: 1.875rem;
+}
+
+.adherence-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 1.125rem;
+    padding: 1.25rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.adherence-card h4 {
+    font-size: 1rem;
+    margin-bottom: .625rem;
+}
+
+/* Tarjeta de Score Total (HU-03) */
+.total-adherence {
+    background: linear-gradient(135deg, #72c4ff, #4E89D7);
+    color: white;
+}
+
+.adherence-score {
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+}
+
+.total-adherence p {
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Visual del Calendario Semanal */
+.weekly-calendar {
+    text-align: left;
+}
+
+.calendar-visual {
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    margin-bottom: .9375rem;
+}
+
+.day-box {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: .5rem;
+    line-height: 2.1875rem;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: 500;
+    color: white;
+}
+
+.day-box.green { background-color: #5cb85c; } /* Dosis Completa */
+.day-box.yellow { background-color: #ffcc00; } /* Dosis Parcial */
+.day-box.red { background-color: #ff744e; color: white; } /* Omisión */
+.day-box.current { background-color: #ddd; color: #333; } /* Día Actual */
+
+.summary-text {
+    font-size: .875rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Widget Ambiental (HU-07) */
+.env-widget {
+    background-color: #f7f9fc;
+}
+.env-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: .3125rem;
+}
+.env-status {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4C6879;
+    margin: 0;
+}
+.env-detail {
+    font-size: .75rem;
+    color: #999;
+}
+
+
+/* FILA MEDIA: METAS Y LOGÍSTICA */
+.mid-row {
+    display: flex;
+    gap: 1.5625rem;
+    margin-bottom: 1.875rem;
+}
+
+.goal-widget, .logistics-widget {
+    flex: 1;
+    background: #fff;
+    border-radius: 1.125rem;
+    padding: 1.5625rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+.goal-widget h3, .logistics-widget h3 {
+    color: #4C6879;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: .9375rem;
+    border-bottom: .0625rem solid #eee;
+    padding-bottom: .625rem;
+}
+
+/* Metas (HU-50) */
+.goal-name {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: .625rem;
+}
+
+.progress-bar-container {
+    background-color: #eee;
+    border-radius: .625rem;
+    height: 1.25rem;
+    margin-bottom: .625rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #5cb85c;
+    transition: width 0.5s ease;
+}
+
+.progress-label {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: .75rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.motivation-text {
+    font-style: italic;
+    color: #666;
+    font-size: .875rem;
+    margin-bottom: .9375rem;
+}
+
+/* Logística (HU-09, HU-16, HU-37) */
+.logistic-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+    font-size: .9375rem;
+}
+
+.logi-icon {
+    font-size: 1.25rem;
+    margin-right: .9375rem;
+    color: #4C6879;
+}
+
+.logistic-item p {
+    margin: 0;
+}
+
+.alert-text {
+    color: #ff744e;
+    font-weight: 600;
+}
+.days-left {
+    background-color: #ff744e;
+    color: white;
+    padding: .125rem .375rem;
+    border-radius: .25rem;
+}
+
+/* FILA INFERIOR: RECURSOS */
+.resources-row {
+    background: #fff;
+    border-radius: 1.125rem;
+    padding: 1.5625rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.resource-card {
+    border: .0625rem solid #eee;
+    border-radius: .75rem;
+    padding: 1.25rem;
+    background-color: #fcfcfc;
+}
+
+.resource-card h4 {
+    color: #4C6879;
+    font-size: 1.125rem;
+    margin-top: 0;
+}
+
+.resource-card p {
+    font-size: .875rem;
+    color: #666;
+    margin-bottom: .9375rem;
+}
+
+/* Reutilizando estilos de botones y adaptándolos */
+.action-btn.small-btn {
+    padding: .5rem .9375rem;
+    font-size: .8125rem;
+    border-radius: .375rem;
+    display: inline-block;
+    border: none;
+}
+
+
+
+@media (max-width: 768px) {
+    /* === 1. HEADER Y NAVEGACIÓN === */
+    .barra-de-navegacion {
+        display: none; /* Oculta la navegación horizontal */
+    }
+    .top-header {
+        padding: 0 1.25rem; /* Ajusta padding lateral, ej: 20px -> 1.25rem (si 16px base) */
+        justify-content: center; /* Centra el logo */
+    }
+    
+    /* === 2. BIENVENIDA Y MÓVIL (Sección 1) === */
+    .bienvenida {
+        margin-top: 5rem; /* Reduce el margen superior */
+        margin-left: 0; /* Elimina el margen fijo de 300px/18.75rem */
+        padding: 0 1.25rem;
+        text-align: center;
+        align-items: center;
+    }
+    .celular-app {
+        position: static; /* Quita el absoluto */
+        right: auto;
+        top: auto;
+        transform: none; /* Quita el centrado vertical */
+        width: 100%;
+        text-align: center;
+        margin-top: 3.125rem; /* Separación, ej: 50px -> 3.125rem */
+    }
+    .celular-app img {
+        max-height: 28rem; /* Limita la altura de la imagen del móvil */
+        width: auto;
+    }
+    #botones-app {
+        justify-content: center;
+    }
+
+    /* === 3. BENEFICIOS (3 columnas) === */
+    .beneficios h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .beneficios-lista {
+        flex-direction: column; /* Apila los beneficios verticalmente */
+        align-items: center; 
+        gap: 1.5rem; /* Reduce la separación */
+        margin-left: 0;
+        padding: 0 1.25rem;
+    }
+    .beneficio-item {
+        width: 90%; 
+    }
+
+    /* === 4. DIV GRAL (Texto e Imagen, si aplica) === */
+    .div-gral {
+        flex-direction: column; /* Apila Texto y la Imagen */
+        padding: 3.125rem 1.25rem;
+        gap: 1.5rem;
+    }
+    .div-texto p {
+        width: 100%; /* El párrafo toma todo el ancho */
+        padding-top: 1.5rem;
+    }
+
+    /* === 5. SECCIÓN INTERMEDIA (2 Imágenes) === */
+    .seccion-intermedia h1 {
+        margin-left: 0;
+        text-align: center;
+        padding-top: 5rem;
+    }
+    .seccion-intermedia .imagenes {
+        flex-direction: column; /* Apila las imágenes */
+        margin-left: 0;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    .seccion-intermedia .imagenes img {
+        width: 90%;
+        height: auto;
+        border-radius: 0; /* Elimina radios asimétricos */
+    }
+
+    /* === 6. PREGUNTAS FRECUENTES (2 columnas) === */
+    .preguntas-frecuentes h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .preguntas-cuadro {
+        grid-template-columns: 1fr; /* Una columna */
+        width: 90%;
+        max-width: none;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .respuesta-tooltip {
+        left: 1.25rem; /* Ajusta la posición del tooltip */
+        width: 15rem;
+    }
+
+    /* === 7. SECCIÓN MÉDICO (3 puntos) === */
+    .medico-lista-puntos {
+        flex-direction: column; /* Apila los 3 puntos */
+        gap: 1.5rem;
+    }
+    .seccion-medico h2 {
+        font-size: 2.5rem;
+    }
+
+    /* === 8. FOOTER === */
+    .footer-contenedor {
+        flex-direction: column; /* Apila los bloques del footer */
+        gap: 2rem; 
+    }
+    .footer-links,
+    .footer-politicas {
+        flex-direction: column; /* Apila los enlaces */
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    /* Regla para ocultar el contenedor del celular */
+    .celular-app {
+        display: none !important; /* El !important asegura que anule cualquier regla anterior */
+    }
+}
+
+/* ========================================================= */
+/* --- ESTILOS: VALIDACIÓN CLÍNICA (LANDING PAGE) --- */
+/* ========================================================= */
+
+.validacion-clinica {
+    /* Ajusta el margen superior para que no choque con la imagen del celular */
+    margin-top: 5rem; 
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #F8F8F8; /* Gris muy claro para destacarse */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.validacion-clinica h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #4C6879;
+    margin-bottom: 2.5rem;
+    padding-top: 0; /* Anula el padding-top del H2 general */
+}
+
+.logos-reconocimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; /* Espacio entre los logos */
+    margin-bottom: 3rem;
+}
+
+.logos-reconocimiento img {
+    opacity: 0.6; /* Un poco desvanecido para que no distraiga demasiado */
+    max-height: 45px;
+    transition: opacity 0.3s ease;
+}
+
+.logos-reconocimiento img:hover {
+    opacity: 1;
+}
+
+/* Estilos para la cita del experto */
+.cita-experto {
+    max-width: 45rem;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #333;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.cita-experto::before {
+    content: "“";
+    font-size: 3rem;
+    color: #FFCC00;
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    line-height: 1;
+}
+
+.cita-experto cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #4C6879;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ========================================================= */
+/* --- ESTILOS: SECCIÓN DE VALIDACIÓN VISUAL DE DATOS --- */
+/* ========================================================= */
+
+.seccion-datos-confianza {
+margin-top: 5rem;
+    /* CLAVE: Centra el bloque horizontalmente */
+    margin-left: auto; 
+    margin-right: auto;
+    
+    /* Define el ancho máximo del contenido para que el centrado funcione */
+    max-width: 50rem; /* Reducido a 50rem para que se vea más centrado y menos ancho */
+    
+    /* CLAVE: Centra el texto y los elementos en línea dentro del bloque */
+    text-align: center; 
+}
+
+.seccion-datos-confianza h1 {
+    /* Mantenemos el font-weight y font-size */
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding-top: 0;
+    color: #4C6879;
+}
+
+.seccion-datos-confianza p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 2rem;
+    /* CLAVE: Esto asegura que el párrafo se centre y no se estire demasiado */
+    max-width: 45rem; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagenes-comparativas {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    
+    /* CLAVE: Centra los elementos flex (las imágenes) dentro del contenedor */
+    justify-content: center; 
+}
+
+.imagenes-comparativas .imagen-item {
+    text-align: center;
+    max-width: 18.75rem; /* Ancho fijo para las imágenes */
+}
+
+.imagenes-comparativas img {
+    height: 18.75rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5625rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-comparativas .imagen-item p {
+    font-size: 0.9rem;
+    color: #4C6879;
+    margin-top: 0.75rem;
+    max-width: none; /* Ignora el max-width del p general */
 }

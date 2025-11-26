@@ -1,0 +1,139 @@
+/* ================================================= */
+/* ====== ESTILOS ESPECÍFICOS: REGISTRO PACIENTE ====== */
+/* ================================================= */
+
+.register-container {
+    padding: 1.5625rem;
+    margin-top: 1.25rem;
+    background-color: #f7f9fc; /* Fondo claro para destacar la tarjeta */
+    min-height: 80vh;
+}
+
+.registration-card {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 .5rem 1.5625rem rgba(0,0,0,0.1);
+    padding: 1.875rem 2.5rem;
+}
+
+.card-title {
+    color: #4C6879;
+    font-size: 1.625rem;
+    margin-top: 0;
+    border-bottom: .125rem solid #eee;
+    padding-bottom: .625rem;
+}
+
+.card-subtitle {
+    color: #666;
+    margin-bottom: 1.5625rem;
+    font-size: .9375rem;
+}
+
+/* Estructura del Formulario */
+.form-section {
+    margin-bottom: 1.875rem;
+    padding: .9375rem;
+    border: .0625rem solid #e0e0e0;
+    border-radius: .75rem;
+    background-color: #fafafa;
+}
+
+.form-section h4 {
+    color: #72c4ff;
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: .375rem;
+    color: #333;
+    font-size: .875rem;
+}
+
+.form-group input, .form-group select {
+    padding: .75rem;
+    border: .0625rem solid #ddd;
+    border-radius: .5rem;
+    font-size: .9375rem;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #72c4ff;
+    outline: none;
+    box-shadow: 0 0 0 .1875rem rgba(114, 196, 255, 0.2);
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1; /* Ocupa todo el ancho en el grid */
+}
+
+/* Acciones y Mensajes */
+.form-actions {
+    margin-top: 1.875rem;
+    padding-top: 1.25rem;
+    border-top: .0625rem solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.blue-btn {
+    padding: .75rem 1.5625rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #72c4ff;
+    color: white;
+    border: none;
+    transition: background-color 0.2s;
+    margin-right: 1.25rem;
+}
+
+.blue-btn:hover {
+    background-color: #4E89D7;
+}
+
+.success-message {
+    padding: .9375rem 1.5625rem;
+    border-radius: .5rem;
+    background-color: #e6ffe6;
+    color: #008000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+#access-code {
+    font-weight: 700;
+    color: #4C6879;
+    margin-left: .625rem;
+    padding: .3125rem .625rem;
+    background-color: #d1eaff;
+    border-radius: .25rem;
+}
+
+.required-note {
+    font-size: .75rem;
+    color: #888;
+    margin-top: .9375rem;
+    width: 100%; /* Asegura que ocupe toda la línea */
+}

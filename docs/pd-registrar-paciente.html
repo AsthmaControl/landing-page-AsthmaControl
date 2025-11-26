@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Paciente - Panel Médico</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pd-registrar-pacientes.css">
+
+</head>
+
+<body>
+    <!-- BARRA LATERAL (Con 'Pacientes' marcado como activo) -->
+    <div class="sidebar">
+        <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Panel</h2>
+        <ul class="panel-lista">
+            <li><a href="panel-doctor.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+            <li><a href="pd-pacientes.html" class="active-link"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
+            <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
+            <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+            <li><a href="pd-index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Registro de Nuevo Paciente</h2>
+        </header>
+
+        <div class="register-container">
+            <div class="registration-card">
+                
+                <h3 class="card-title">Datos Personales y Clínicos</h3>
+                <p class="card-subtitle" style="margin-top: 15px;">Complete los campos para generar el código de acceso a la aplicación móvil.</p>
+
+                <form id="patient-registration-form">
+                    <!-- Sección de Datos Personales -->
+                    <div class="form-section">
+                        <h4>1. Identificación</h4>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo del Paciente (*)</label>
+                                <input type="text" id="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha-nacimiento">Fecha de Nacimiento (*)</label>
+                                <input type="date" id="fecha-nacimiento" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sexo">Sexo</label>
+                                <select id="sexo">
+                                    <option value="f">Femenino</option>
+                                    <option value="m">Masculino</option>
+                                    <option value="o">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono-cuidador">Teléfono del Cuidador (*)</label>
+                                <input type="tel" id="telefono-cuidador" placeholder="+54 9 11 XXXX XXXX" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección de Información Médica -->
+                    <div class="form-section">
+                        <h4>2. Diagnóstico y Tratamiento</h4>
+                         <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="diagnostico">Diagnóstico de Asma (*)</label>
+                                <select id="diagnostico" required>
+                                    <option value="">Seleccione severidad...</option>
+                                    <option value="leve">Leve Intermitente</option>
+                                    <option value="moderada">Moderada Persistente</option>
+                                    <option value="severa">Severa Persistente</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="medicacion-control">Medicación de Control (Mantenimiento) (*)</label>
+                                <input type="text" id="medicacion-control" placeholder="Ej: Fluticasona 500 mcg / 2 veces al día" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="medicacion-rescate">Medicación de Rescate</label>
+                                <input type="text" id="medicacion-rescate" placeholder="Ej: Salbutamol (Ventolín)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón y Mensaje de Éxito -->
+                    <div class="form-actions">
+                        <button type="submit" class="blue-btn">Registrar Paciente y Generar Código</button>
+                        <div id="success-message" class="success-message" style="display: none;">
+                            ✅ ¡Registro exitoso! Código generado para el paciente: <span id="access-code"></span>
+                            <a href="pd-pacientes.html" class="action-btn chat-btn small-btn" style="margin-left: 15px;">Ir a Lista de Pacientes</a>
+                        </div>
+                         <p class="required-note">(*) Campos obligatorios.</p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script básico para simular el registro y generar un código -->
+    <script>
+        document.getElementById('patient-registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Simulación de validación
+            if (!document.getElementById('nombre').value || !document.getElementById('telefono-cuidador').value) {
+                alert("Por favor, complete todos los campos obligatorios (*).");
+                return;
+            }
+            
+            // Simulación de generación de código (función para generar 6 dígitos/letras)
+            const generateCode = () => Math.random().toString(36).substring(2, 8).toUpperCase();
+            
+            // Mostrar mensaje de éxito
+            const accessCodeElement = document.getElementById('access-code');
+            const successMessage = document.getElementById('success-message');
+            
+            accessCodeElement.textContent = generateCode();
+            successMessage.style.display = 'flex';
+            
+            // Opcional: Deshabilitar el formulario después del registro exitoso
+            document.querySelectorAll('#patient-registration-form input, #patient-registration-form select, #patient-registration-form button').forEach(el => {
+                 if (el.type !== 'submit') el.disabled = true;
+            });
+            event.target.querySelector('button[type="submit"]').textContent = 'Registro Completado';
+            event.target.querySelector('button[type="submit"]').disabled = true;
+            
+            // En un entorno real, aquí se llamaría a la API de Firestore para guardar los datos.
+            console.log("Datos listos para ser guardados en Firestore.");
+        });
+    </script>
+</body>
+</html>

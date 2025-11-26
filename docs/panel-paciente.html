@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Control de Asma</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Mi Control</h2>
+        <ul class="panel-lista">
+            <li><a href="panel-paciente.html" class="active-link"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+            <li><a href="pp-historial.html"><img src="assets/images/report-icon.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Historial y Síntomas</a></li>
+            <li><a href="pp-metas.html"><img src="assets/images/goal-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Metas y Logros</a></li>
+             <li><a href="pp-recursos.html"><img src="assets/images/calendar-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Logística</a></li>
+            <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
+            <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+            <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Hola, Mamá de Mariana</h2>
+        </header>
+
+        <div class="patient-dashboard-container">
+
+            <div class="adherence-row">
+                
+                <div class="adherence-card total-adherence">
+                    <h4>Adherencia Semanal</h4>
+                    <span class="adherence-score">85%</span>
+                    <p>Meta: 90%</p>
+                </div>
+
+                <div class="adherence-card weekly-calendar">
+                    <h4>Progreso de la Semana</h4>
+                    <div class="calendar-visual">
+                        <div class="day-box green">Lun</div>
+                        <div class="day-box green">Mar</div>
+                        <div class="day-box yellow">Mié</div>
+                        <div class="day-box red">Jue</div>
+                        <div class="day-box green">Vie</div>
+                        <div class="day-box yellow">Sáb</div>
+                        <div class="day-box current">Dom</div>
+                    </div>
+                    <p class="summary-text">2 dosis omitidas esta semana. Revisa el historial.</p>
+                </div>
+
+                <div class="adherence-card env-widget">
+                    <h4>Calidad del Aire</h4>
+                    <span class="env-icon">💨</span>
+                    <p class="env-status">Moderada</p>
+                    <p class="env-detail">📍 Lima (22°C)</p>
+                </div>
+            </div>
+
+            <div class="mid-row">
+                
+                <div class="goal-widget">
+                    <h3>Mi Meta Principal ⭐</h3>
+                    <p class="goal-name">Días consecutivos sin omitir dosis (3/4)</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                        <span class="progress-label">21 / 30 Días (70%)</span>
+                    </div>
+                    <p class="motivation-text">¡Sigue así, Mariana! Estás cerca de desbloquear el logro.</p>
+                    <a href="pp-metas.html" class="action-btn blue-btn small-btn">Ver todos los Logros</a>
+                </div>
+
+                <div class="logistics-widget">
+                    <h3>Recuerda</h3>
+                    <div class="logistic-item next-dose">
+                        <span class="logi-icon">💊</span>
+                        <p><strong>Próxima dosis:</strong> 8:00 PM (Mantenimiento)</p>
+                    </div>
+                    <div class="logistic-item refill-alert">
+                        <p class="alert-text">⚠️ Quedan 5 días de medicamento.</p>
+                    </div>
+                    <a href="pp-logistica.html" class="action-btn chat-btn small-btn">Gestionar Inventario</a>
+                </div>
+
+            </div>
+
+            <div class="resources-row">
+                <h3>Acceso Rápido</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Registro de Síntomas</h4>
+                        <p>Añadir un nuevo registro diario (Tos, Silbido).</p>
+                        <button class="action-btn report-btn small-btn">Registrar</button>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Bitácora de Crisis</h4>
+                        <p>Revisar el historial completo de eventos y gatillantes.</p>
+                        <a href="pp-historial.html" class="action-btn blue-btn small-btn">Ver Historial</a>
+                    </div>
+                     <div class="resource-card">
+                        <h4>Guías de Respiración</h4>
+                        <p>Videos y ejercicios para mejorar la capacidad pulmonar.</p>
+                        <a href="pp-logistica.html" class="action-btn chat-btn small-btn">Ver Recursos</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - Panel Paciente</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pp-configuracion.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Mi Control</h2>
+        <ul class="panel-lista">
+            <li><a href="panel-paciente.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+            <li><a href="pp-historial.html"><img src="assets/images/report-icon.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Historial y Síntomas</a></li>
+            <li><a href="pp-metas.html"><img src="assets/images/goal-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Metas y Logros</a></li>
+            <li><a href="pp-logistica.html" class="active-link"><img src="assets/images/calendar-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Logística y Citas</a></li>
+            <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
+            <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+            <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Ajustes de Cuenta y Privacidad</h2>
+        </header>
+
+        <div class="config-container">
+            
+            <div class="config-tabs">
+                <button class="tab-btn active-tab" data-target="perfil-pac">👤 Mi Cuenta</button>
+                <button class="tab-btn" data-target="permisos">🔗 Permisos y Compartición</button>
+                <button class="tab-btn" data-target="seguridad-pac">🔒 Seguridad</button>
+            </div>
+
+            <div id="permisos" class="config-content active-content">
+                 <h3>Compartición de Datos (HU-42)</h3>
+                <p class="config-description">Gestiona qué información ven tus profesionales de salud y otros cuidadores.</p>
+                
+                <div class="permission-settings">
+                    <div class="perm-group">
+                        <h4>Dr. Rodrigo Pérez (Neumólogo)</h4>
+                        <p class="perm-status">Conectado desde 2024</p>
+                        <div class="toggle-group-perm">
+                            <label>Compartir Historial de Crisis y Síntomas (HU-10/49):</label>
+                            <div class="toggle-switch active-toggle"><div class="toggle-circle"></div></div>
+                        </div>
+                        <div class="toggle-group-perm">
+                             <label>Compartir Logros y Metas (HU-50):</label>
+                            <div class="toggle-switch"><div class="toggle-circle"></div></div>
+                        </div>
+                         <button class="action-btn terminate-btn small-btn" style="margin-top: 15px;">Revocar Acceso</button>
+                    </div>
+
+                    <div class="perm-group">
+                        <h4>Modo Familiar / Cuidador Adicional (HU-31)</h4>
+                        <p class="perm-status">María Sánchez (Madre)</p>
+                         <div class="toggle-group-perm">
+                            <label>Permitir acceso al Chat (HU-40):</label>
+                            <div class="toggle-switch active-toggle"><div class="toggle-circle"></div></div>
+                        </div>
+                         <div class="toggle-group-perm">
+                            <label>Permitir gestión de Inventario (HU-16):</label>
+                            <div class="toggle-switch active-toggle"><div class="toggle-circle"></div></div>
+                        </div>
+                        <button class="action-btn blue-btn small-btn" style="margin-top: 15px;">➕ Añadir Otro Cuidador</button>
+                    </div>
+                </div>
+                <button class="save-btn blue-btn" style="margin-top: 25px;">Guardar Preferencias de Permisos</button>
+            </div>
+            
+            <div id="perfil-pac" class="config-content">
+                <h3>Información de la Cuenta</h3>
+                <div class="profile-settings">
+                    <div class="form-group">
+                        <label for="nombre-paciente">Nombre del Paciente:</label>
+                        <input type="text" id="nombre-paciente" value="Mariana Pérez">
+                    </div>
+                    <div class="form-group">
+                        <label for="cuidador-paciente">Nombre del Cuidador Principal:</label>
+                        <input type="text" id="cuidador-paciente" value="Laura Gómez">
+                    </div>
+                    <div class="form-group">
+                        <label for="email-paciente">Correo de Contacto:</label>
+                        <input type="email" id="email-paciente" value="laura.gomez@mail.com">
+                    </div>
+                    <button class="save-btn blue-btn">Actualizar Información</button>
+                </div>
+            </div>
+            
+            <div id="seguridad-pac" class="config-content">
+                 <h3>Gestión de Contraseña</h3>
+                 <div class="security-settings">
+                    <div class="form-group">
+                        <label for="old-pass-pac">Contraseña Actual:</label>
+                        <input type="password" id="old-pass-pac">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-pass-pac">Nueva Contraseña:</label>
+                        <input type="password" id="new-pass-pac">
+                    </div>
+                    <button class="save-btn blue-btn">Actualizar Contraseña</button>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.config-content');
+            
+            // Inicializar para mostrar la pestaña de Permisos (que es la más relevante para el cuidador)
+            document.getElementById('permisos').classList.add('active-content');
+            document.querySelector('[data-target="permisos"]').classList.add('active-tab');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = tab.getAttribute('data-target');
+
+                    // Desactivar todos los contenidos y botones
+                    contents.forEach(content => content.classList.remove('active-content'));
+                    tabs.forEach(t => t.classList.remove('active-tab'));
+
+                    // Activar el contenido y botón seleccionados
+                    document.getElementById(target).classList.add('active-content');
+                    tab.classList.add('active-tab');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

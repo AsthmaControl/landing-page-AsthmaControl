@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - Panel Médico</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pd-chats.css">
+    <link rel="stylesheet" href="assets/css/pd-pacientes.css">
+</head>
+
+<body>
+  <div class="sidebar">
+  <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Panel</h2>
+  <ul class="panel-lista">
+    <li><a href="panel-doctor.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+    <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
+    <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
+    <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+    <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+  </ul>
+</div>
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Chats con pacientes</h2>
+        </header>
+
+        <div class="chat-app-container">
+            
+            <div class="chat-list-panel">
+                <div class="search-chat">
+                    <input type="text" placeholder="Buscar conversación..." class="search-input">
+                </div>
+                
+                <div class="chat-item active-chat">
+                    <img src="assets/images/patient-mariana.jpg" alt="Mariana" class="chat-avatar">
+                    <div class="chat-info">
+                        <h4>Mariana Pérez (12 años)</h4>
+                        <p class="last-message">Cuidador: ¿Debo aumentar la dosis del rescate?</p>
+                    </div>
+                    <span class="chat-time">10:45 AM</span>
+                </div>
+                
+                <div class="chat-item unread-chat">
+                    <img src="assets/images/patient-carlos.jpg" alt="Carlos" class="chat-avatar">
+                    <div class="chat-info">
+                        <h4>Carlos García (25 años)</h4>
+                        <p class="last-message">Paciente: Ya me siento mucho mejor.</p>
+                    </div>
+                    <span class="unread-count">1</span>
+                </div>
+
+                <div class="chat-item">
+                    <img src="assets/images/patient-sofia.jpg" alt="Sofía" class="chat-avatar">
+                    <div class="chat-info">
+                        <h4>Sofía Ramírez (17 años)</h4>
+                        <p class="last-message">Paciente: Gracias por su respuesta rápida.</p>
+                    </div>
+                    <span class="chat-time">Ayer</span>
+                </div>
+            </div>
+
+            <div class="chat-window-panel">
+                
+                <div class="chat-header-info">
+                    <h3>Conversación con Mariana Pérez (Cuidador)</h3>
+                    <a href="reporte_mariana.html" class="report-link">📊 Ver Chat Completo</a>
+                </div>
+
+                <div class="chat-messages">
+                    <div class="message doctor-message">
+                        <p>Sí, por favor, continúe con el esquema actual. Si los síntomas persisten mañana, envíeme un mensaje de nuevo.</p>
+                        <span class="message-time">10:43 AM</span>
+                    </div>
+
+                    <div class="message patient-message">
+                        <p>Doctor, Mariana amaneció con un poco de tos seca. ¿Debo administrar la dosis extra del inhalador de rescate?</p>
+                        <span class="message-time">10:45 AM</span>
+                    </div>
+                    
+                    <div class="message doctor-message">
+                        <p>Entendido. Por favor, indíqueme en qué horario de la noche tuvo el episodio de tos.</p>
+                        <span class="message-time">10:55 AM</span>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <textarea placeholder="Escriba un mensaje..." rows="2"></textarea>
+                    <button class="send-btn blue-btn">Enviar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
