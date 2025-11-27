@@ -87,25 +87,19 @@ h1{
 
 
 .barra-de-navegacion{
-    list-style: none;
     display: flex;      /* coloca los items en una fila */
     gap: 4.6875rem;          /* separa los enlaces */
     margin: 0 auto;
-    padding: 0;
-    align-items: left; /* centra verticalmente los enlaces */
     list-style: none;
 }
 .barra-de-navegacion a{
-    padding-top: 0rem;
     font-size: .7813rem;
     color: #4C6879;
     text-decoration: none;
 }
 
 .bienvenida {
-        margin-top: 7.5rem; /* deja lugar para el header fixed */
-
-    margin-left: 18.75rem;
+    margin-top: 7.5rem; /* deja lugar para el header fixed */
     display: flex;
     flex-direction: column; /* apila los elementos verticalmente */
     gap: 1.25rem; /* distancia vertical entre cada elemento interno */
@@ -368,14 +362,11 @@ gap:4.6875rem;
 
 
 .celular-app:hover {
-    transform: translateY(-50%) scale(1.04); /* combina translateY y scale */
+    transform: scale(1.04); /* combina translateY y scale */
 }
 
 .celular-app {
-    position: absolute;
-    right: 25rem;
-    top: 55%;
-    transform: translateY(-50%); /* mantiene centrado vertical */
+
     transition: transform 0.3s ease;
 }
 
@@ -1453,4 +1444,360 @@ margin-top: 5rem;
     color: #4C6879;
     margin-top: 0.75rem;
     max-width: none; /* Ignora el max-width del p general */
+}
+
+
+/* Estilo para convertir el enlace en un botón */
+.boton-login {
+    background-color: #ffe476; /* O el color que desees */
+    color: #4C6879; /* Asegura que el texto sea blanco */
+    padding: 0.4rem 1rem; 
+    border-radius: 0.5rem;
+    font-weight: 500;
+    /* Para separarlo del último enlace si el flexbox no lo hace */
+    border: 0.1rem solid #ffe26f;
+}
+
+#boton-login-id:hover{
+    transform: scale(0.8);
+        color: #4C6879;
+
+}
+
+/* Estilo para convertir el enlace en un botón */
+.boton-doctor {
+    background-color: #ffffff; /* O el color que desees */
+    color: #4C6879; /* Asegura que el texto sea blanco */
+    padding: 0.4rem 1rem; 
+    border-radius: 0.5rem;
+    font-weight: 500;
+    /* Para separarlo del último enlace si el flexbox no lo hace */
+    border: 0.1rem dashed #e1e1e1;
+}
+
+#boton-doctor-id:hover{
+    transform: scale(0.8);
+        color: #4C6879;
+
+}
+
+
+
+
+
+.hero {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;      /* fuerza columnas */
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+    /* ancho */
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+}
+
+.hero-texto {
+    flex: 1; 
+}
+
+.celular-app {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.celular-app img {
+    max-width: 17.5rem;
+    height: auto;
+}
+
+.md-testimonios { padding: 2.5rem 1rem; }
+.md-testi-grid { display:flex; gap:1rem; }
+.md-testi { background:#fff; padding:1.25rem; border-radius:.75rem; box-shadow:0 10px 24px rgba(33,55,68,0.04); }
+.md-testi p{ color:#22373d; font-style:normal; }
+.md-testi cite{ display:block; margin-top:.75rem; color:#51676f; font-weight:700; }
+@media (max-width:900px){ .md-testi-grid{ flex-direction:column;} }
+
+.md-lead { padding:2.5rem 1rem; display:flex; justify-content:center; }
+.md-lead-card { max-width:760px; background:#ffffff; padding:1.5rem; border-radius:.75rem; box-shadow:0 12px 30px rgba(33,55,68,0.06); text-align:center; }
+.md-lead-form { display:flex; gap:.75rem; margin-top:1rem; flex-wrap:wrap; justify-content:center; }
+.md-lead-form input { padding:.8rem .9rem; border-radius:.5rem; border:1px solid #e6f0f5; min-width:200px; }
+.md-lead-form button { padding:.8rem 1.2rem; border-radius:.6rem; border:none; background:#264e63; color:#fff; font-weight:700; cursor:pointer; }
+
+
+/* =======================
+   SECCIÓN AYUDA
+======================= */
+
+.seccion-ayuda {
+  padding: 80px 5%;
+  margin-top: 120px; /* para que no se oculte por el header fijo */
+}
+
+/* GRID PRINCIPAL */
+.ayuda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .ayuda-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* BLOQUE IZQUIERDO */
+.ayuda-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00396b;
+}
+
+.ayuda-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* CUADRO DESTACADO */
+.ayuda-highlight {
+  background: #e9f4ff;
+  padding: 16px 20px;
+  border-left: 4px solid #007bff;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.correo-ayuda {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #005bb5;
+}
+
+/* FORMULARIO */
+.formulario-ayuda {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.form-titulo {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00396b;
+}
+
+/* CAMPOS */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cfdbe8;
+  background: #fafafa;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+/* Focus */
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #007bff;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+
+/* Textareas */
+.input-grande {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Check */
+.campo-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.campo-check label {
+  font-size: 14px;
+}
+
+/* Botón */
+.enviar-formulario {
+  width: 100%;
+  padding: 14px 0;
+  background: #0068da;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.enviar-formulario:hover {
+  background: #0054b3;
+}
+
+/* =======================
+   SECCIÓN AYUDA
+======================= */
+
+.seccion-ayuda {
+  padding: 80px 5%;
+  margin-top: 120px; /* para que no se oculte por el header fijo */
+}
+
+/* GRID PRINCIPAL */
+.ayuda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .ayuda-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* BLOQUE IZQUIERDO */
+.ayuda-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00396b;
+}
+
+.ayuda-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* CUADRO DESTACADO */
+.ayuda-highlight {
+  background: #e9f4ff;
+  padding: 16px 20px;
+  border-left: 4px solid #007bff;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.correo-ayuda {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #005bb5;
+}
+
+/* FORMULARIO */
+.formulario-ayuda {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.form-titulo {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00396b;
+}
+
+/* CAMPOS */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cfdbe8;
+  background: #fafafa;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+/* Focus */
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #007bff;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+
+/* Textareas */
+.input-grande {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Check */
+.campo-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.campo-check label {
+  font-size: 14px;
+}
+
+/* Botón */
+.enviar-formulario {
+  width: 100%;
+  padding: 14px 0;
+  background: #0068da;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.enviar-formulario:hover {
+  background: #0054b3;
 }

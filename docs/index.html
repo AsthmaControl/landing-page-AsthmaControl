@@ -17,16 +17,20 @@
             </a>
 <ul class="barra-de-navegacion">
     <li><a href="index.html">Inicio</a></li>
-    <li><a href="tecnologia-datos.html">Tecnología y Datos</a></li>
-    <li><a href="beneficios.html">Beneficios y Funciones</a></li>
-    <li><a href="ayuda.html">Ayuda y Contacto</a></li>
-    <li><a href="medicos.html" class="nav-doctor">Modo Doctor</a></li>
+    <li><a href="tecnologia-datos.html">¿Qué brindamos?</a></li>
+    <li><a href="ayuda.html">Contacto al cliente</a></li>
+    <li><a href="panel-doctor.html" id="boton-doctor-id"class="boton-doctor">Simulación de Panel Médico</a></li>
+    <li class="item-login">
+    <a href="lp-login.html" id="boton-login-id"class="boton-login">
+        Iniciar Sesión
+    </a>
 </ul>
         </nav>
     </header>
-    <section class="bienvenida">
-        <h1>Conecta tu tratamiento <br>del asma con tu <br>médico de forma<br> proactiva</h1>
-        <p class="bienvenida-texto-apoyo">La plataforma que registra el tratamiento<br> a través de recordatorios y mejora la<br> comunicación entre medico y paciente
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Control del asma de forma inteligente y conexión constante con el médico.</h1>
+        <p style="margin-top: 1rem; width: 22rem;">La plataforma que registra el tratamiento a través de recordatorios y usa estos datos para mejorar la comunicación entre medico y paciente.
         </p>
 
         <div id="botones-app" class="imagenes-descargar">
@@ -41,10 +45,11 @@
             <img height="15" src="assets/images/Captura de pantalla 2025-10-15 165946.png">
             <p class="rating-texto">Más de 10000 descargas</p>
         </div>
-    </section>
+</div>
     <div class="celular-app">
-        <img height="500" src="assets/images/Captura de pantalla 2025-10-25 220120.png">
+        <img src="assets/images/Captura de pantalla 2025-10-25 220120.png">
     </div>
+   </section>
 
     <section class="validacion-clinica">
     <h2>Avalado por Expertos en la Gestión de Enfermedades Crónicas</h2>
@@ -82,17 +87,17 @@
 -->
 <section class="seccion-medico">
   <div class="medico-contenido">
-    <h2>Control Compartido: El Enlace con tu Médico</h2>
-    <p>AsthmaControl te ayuda con recordatorios, y a tu profesional de la salud con datos. La plataforma conecta tu tratamiento diario con el criterio médico, permitiendo una atención más precisa.</p>
+    <h2>Control Compartido: El Enlace con el Médico</h2>
+    <p>AsthmaControl ayuda contra el asma con recordatorios, y al profesional de la salud con datos. La plataforma conecta el tratamiento diario con el criterio médico, permitiendo una atención más precisa.</p>
     
     <div class="medico-lista-puntos">
       <div class="medico-punto">
         <h3>Monitoreo en Tiempo Real</h3>
-        <p>Tu médico puede revisar gráficas de adherencia y reportes de síntomas al instante, sin esperar a tu próxima consulta.</p>
+        <p>El médico puede revisar gráficas de adherencia y reportes de síntomas al instante, sin esperar a tu próxima consulta.</p>
       </div>
       <div class="medico-punto">
         <h3>Interacción Segura y Rápida</h3>
-        <p>Recibe indicaciones, ajustes de dosis o mensajes directamente de tu médico a través de un canal seguro y centralizado.</p>
+        <p>Recibe indicaciones, ajustes de dosis o mensajes directamente del médico a través de un canal seguro y centralizado.</p>
       </div>
       <div class="medico-punto">
         <h3>Decisiones Basadas en Datos</h3>
@@ -103,39 +108,26 @@
     <a href="medicos.html" class="boton-doctor-cta">Información para Médicos</a>
   </div>
 </section>
-<div class="seccion-datos-confianza">
-    <h1>El Asma de forma objetiva y clara</h1>
-    <p>Ya no es necesario suponer tanto. Con AsthmaControl, el clínico ve el comportamiento real del paciente, no solo lo que este recuerda. Esto es el verdadero control compartido.</p>
-    <div class="imagenes-comparativas">
-        <div class="imagen-item">
-            <img height="300" src="assets/images/premium_photo-1716987527266-92f664ffd91d.jpg" alt="Persona usando el inhalador y la app">
-            <p><strong>Fuente del Dato:</strong> Registro objetivo y ambiental.</p>
-        </div>
-        <div class="imagen-item">
-            <img height="300" src="assets/images/premium_photo-1663127675601-377621b1a99f.jpg" alt="Médico revisando gráficas de paciente">
-            <p><strong>Destino del Dato:</strong> Diagnóstico y ajuste de dosis preciso.</p>
-        </div>
-    </div>
-</div>
+
 <div class="preguntas-frecuentes">
   <h1>Preguntas frecuentes</h1>
   <div class="preguntas-cuadro">
     <div class="pregunta-item">
       <img height="50" src="assets/images/inhaler.png" class="pregunta-icono">
-      <span class="pregunta-texto">¿Cómo ayuda<br>al paciente con<br> el tratamiento?
-       <span class="respuesta-tooltip">La app mantiene un registro constante de su tratamiento y este puede ser visualizado por el médico.</span>
+      <span class="pregunta-texto">¿Cómo se protege la información del paciente?
+       <span class="respuesta-tooltip">Usamos cifrado AES-256 en reposo y TLS 1.3 en tránsito, control de accesos y roles clínicos.</span>
     </span>
     </div>
     <div class="pregunta-item">
       <img height="50" src="assets/images/phone.png" class="pregunta-icono" style="margin-left: .3125rem;">
-      <span class="pregunta-texto">¿La app se adapta<br> a condiciones de bajos recursos?
-           <span class="respuesta-tooltip">Sí. La app y sus funciones principales funcionan con o sin internet, adaptandose dependiendo de la situación en la que estés.</span>
+      <span class="pregunta-texto">¿Necesito infraestructura especial?
+           <span class="respuesta-tooltip">No, el panel es web, accesible desde navegador seguro con credenciales institucionales.</span>
 </span>
     </div>
     <div class="pregunta-item">
       <img height="50" src="assets/images/dollar.png" class="pregunta-icono">
-      <span class="pregunta-texto">¿Cuestan algún<br>dinero las funciones especiales?
-           <span class="respuesta-tooltip">La app y todas sus funciones de reportes y comunicación con tu médico son totalmente gratis.</span>
+      <span class="pregunta-texto">¿Se integra con la Historia Clínica Electrónica?
+           <span class="respuesta-tooltip">Ofrecemos exportación en PDF y endpoints FHIR (en roadmap/implementación según contrato).</span>
 </span>
     </div>
     <div class="pregunta-item">
@@ -146,11 +138,13 @@
     </div>
   </div>
 </div>
+
+
 <div class="parte-final">
 <h1>Simplifica tu vida,<br>y la de tu paciente,<br>empieza a controlar<br> el asma hoy</h1>
 </div>
 <div class="boton-descargar-container">
-    <a href="#" class="boton-descargar">Descargar Aplicación</a>
+    <a href="#" class="boton-descargar">Probar Simulación de Panel Médico</a>
 </div>
 
 <footer class="footer">

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/styles.css"> <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="assets/css/lp-tecnologia-datos.css"> <!-- Enlace al archivo CSS -->
 
+
 </head>
 
 <body>
@@ -19,58 +20,115 @@
             </a>
 <ul class="barra-de-navegacion">
     <li><a href="index.html">Inicio</a></li>
-    <li><a href="tecnologia-datos.html">Tecnología y Datos</a></li>
-    <li><a href="beneficios.html">Beneficios y Funciones</a></li>
-    <li><a href="ayuda.html">Ayuda y Contacto</a></li>
-    <li><a href="medicos.html" class="nav-doctor">Modo Doctor</a></li>
+    <li><a href="tecnologia-datos.html">¿Qué brindamos?</a></li>
+    <li><a href="ayuda.html">Contacto al cliente</a></li>
+    <li><a href="panel-doctor.html" id="boton-doctor-id"class="boton-doctor">Simulación de Panel Médico</a></li>
+    <li class="item-login">
+    <a href="lp-login.html" id="boton-login-id"class="boton-login">
+        Iniciar Sesión
+    </a>
 </ul>
         </nav>
     </header>
-    <section class="seccion-principal-datos">
-        <h1>Tecnología que transforma la gestión del Asma</h1>
-        <p class="subtitulo-datos">Pasamos del recuerdo a la **evidencia**. AsthmaControl proporciona a los clínicos la data objetiva necesaria para una toma de decisiones más rápida y precisa, alineada con las guías GINA.</p>
-    </section>
+<section class="seccion-principal-datos">
+    <h1>Tecnología que transforma la gestión del Asma</h1>
+    <p class="subtitulo-datos">AsthmaControl proporciona a los clínicos la data objetiva necesaria para una toma de decisiones más rápida y precisa, alineada con las guías GINA.</p>
+</section>
 
-    <section class="contenedor-innovacion">
-        
-                <div class="bloque-data data-objetiva">
-            <h2>Adherencia: Medida, No Estimada</h2>
-            <p>Superamos el sesgo del reporte verbal. La plataforma rastrea el uso de medicamentos de control y rescate, generando métricas de adherencia objetivas que son cruciales para determinar si la falta de control es por **adherencia** o por **severidad** de la enfermedad.</p>
-            
-            <div class="grafica-simulada">
-                <img src="assets/images/grafica-adherencia.png" alt="Gráfica simulada de adherencia objetiva"> 
-                <p class="pie-grafica">Visualización de la Adherencia (%) a lo largo del tiempo.</p>
-            </div>
-        </div>
+<section class="contenedor-innovacion">
+    <div class="bloque-data data-objetiva">
+        <h2>Adherencia: Medida, No Estimada</h2>
+        <p>Se elimina el tener que recordar y depender de datos subjetivos. La plataforma registra constantemente el uso de medicamentos de control, generando métricas de adherencia objetivas que son cruciales para determinar si la falta de control es por adherencia o por severidad de la enfermedad.</p>
 
-                <div class="bloque-data data-predictiva">
-            <h2>Motor de Riesgo Predictivo</h2>
-            <p>Utilizamos algoritmos para correlacionar los datos del paciente (adherencia, síntomas, uso de rescate) con el contexto ambiental (calidad del aire, clima). Esto permite al sistema alertar al médico sobre pacientes con **riesgo elevado de exacerbación** en los próximos 7 días.</p>
-            
-            <ul>
-                <li>**Fuente de Datos 1:** Adherencia y Patrones de Síntomas.</li>
-                <li>**Fuente de Datos 2:** Índices de Polución y Alérgenos Locales (vía API).</li>
-                <li>**Resultado:** Priorización inteligente de pacientes en el *dashboard* del médico.</li>
-            </ul>
-        </div>
+        <div class="grafica-simulada">
+            <img src="assets/images/grafico-adherencia.png" alt="Gráfica simulada de adherencia objetiva">
+            <p class="pie-grafica">Visualización de la Adherencia (%) durante 1 semana.</p>
+        </div>
+    </div>
 
-                <div class="bloque-data data-seguridad">
-            <h2>Seguridad y Compliance Regulatorio</h2>
-            <p>Entendemos la importancia de la seguridad en la gestión de datos de salud. Nuestra plataforma está diseñada bajo estrictos protocolos de cifrado y anonimización de la información, cumpliendo con las normativas locales e internacionales de protección de datos sanitarios (ej. HIPAA/GDPR, según la región).</p>
-            <a href="#" class="boton-seguridad">Ver Políticas de Privacidad de Datos</a>
-        </div>
+    <div class="bloque-data data-predictiva">
+        <h2>Motor de Riesgo Predictivo</h2>
+        <p>Utilizamos algoritmos para correlacionar los datos del paciente (adherencia, síntomas, uso de rescate) con el contexto ambiental (calidad del aire, clima). Esto permite al sistema alertar al médico sobre pacientes con riesgo elevado de exacerbación en los próximos 7 días.</p>
 
-    </section>
+        <ul>
+            <li>Fuente de Datos 1: Adherencia y Patrones de Síntomas.</li>
+            <li>Fuente de Datos 2: Índices de Polución y Alérgenos Locales (vía API).</li>
+            <li>Resultado: Priorización inteligente de pacientes en el *dashboard* del médico.</li>
+        </ul>
+    </div>
 
-    <div class="llamada-final-doctor">
-        <h1>¿Listo para una consulta con evidencia?</h1>
-        <a href="medicos.html" class="boton-medico-final">
-            Ir al Modo Doctor
-        </a>
-    </div>
+    <div class="bloque-data data-seguridad">
+        <h2>Seguridad y Compliance Regulatorio</h2>
+        <p>Entendemos la importancia de la seguridad en la gestión de datos de salud. Nuestra plataforma está diseñada bajo estrictos protocolos de cifrado y anonimización de la información, cumpliendo con las normativas locales e internacionales de protección de datos sanitarios (ej. HIPAA/GDPR, según la región).</p>
+        <a href="#" class="boton-seguridad">Ver Políticas de Privacidad de Datos</a>
+    </div>
+</section>
+
+  <section class="hero-medico">
+    <h1>Optimice el Manejo del Asma con Datos Reales</h1>
+    <p>AsthmaControl transforma la adherencia de sus pacientes en información clínica actionable, mejorando la toma de decisiones y la eficiencia de sus consultas.</p>
+  </section>
+
+  <section class="caracteristicas-medico">
+    <h2>Su Visión, Amplificada</h2>
+
+    <div class="lista-caracteristicas">
+      <div class="caracteristica-item">
+        <h3>Monitoreo de Adherencia (MAP)</h3>
+        <p>Vea gráficas detalladas sobre la administración de dosis (tomadas vs. perdidas) para identificar patrones de riesgo o falta de cumplimiento inmediatamente.</p>
+        <img src="assets/images/reporte-paciente.png" alt="Reporte de paciente" width="100%">
+      </div>
+
+      <div class="caracteristica-item">
+        <h3>Comunicación Directa y Segura</h3>
+        <p>Envíe mensajes, alertas de ajuste de dosis o recordatorios específicos directamente al móvil del paciente, manteniendo un registro clínico seguro.</p>
+        <img src="assets/images/chat-medico.png" alt="Chat médico seguro" width="100%">
+      </div>
+
+      <div class="caracteristica-item">
+        <h3>Reportes Personalizados</h3>
+        <p>Genere informes exportables sobre el historial de síntomas y uso del medicamento, haciendo que las evaluaciones periódicas sean rápidas y objetivas.</p>
+        <img src="assets/images/reporte-pdf.png" alt="Icono de reporte PDF" width="100%">
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-simulacion">
+    <h2>¿Listo para ver el Control en Acción?</h2>
+    <p>Explore de forma interactiva el entorno que le proporcionará datos clave sobre la evolución y el manejo del asma en sus pacientes.</p>
+    <a href="panel-doctor.html" class="boton-simulacion">Ver Simulación del Panel Médico</a>
+  </section>
     
-        <footer class="footer">
-            </footer>
-    <script src="java.js"></script>
+<footer class="footer">
+  <div class="footer-contenedor">
+      
+    <div class="footer-logo">
+      <img src="assets/images/asthamcontrol.png" height="30" alt="AsthmaControl">
+      <span>AsthmaControl</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="about.html">¿Qué es AsthmaControl?</a>
+      <a href="beneficios.html">Beneficios</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="ayuda.html">Contacto</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><img src="assets/images/icon-facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/images/icon-instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="assets/images/icon-twitter.png" alt="Twitter"></a>
+    </div>
+
+    <div class="footer-politicas">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Contacto</a>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">© 2025 AsthmaControl. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>

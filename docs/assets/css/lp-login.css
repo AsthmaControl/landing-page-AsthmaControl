@@ -1,0 +1,200 @@
+/* --- ESTILOS GENERALES DE LA PÁGINA DE LOGIN --- */
+.login-contenedor-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    /* Fondo degradado suave */
+    background: linear-gradient(135deg, #e7f1f5 0%, #d9e7f0 100%); 
+}
+
+.login-caja {
+    background-color: #fff;
+    padding: 3.5rem; /* Aumentamos el padding para más espacio */
+    border-radius: 1.2rem; /* Bordes más redondeados */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    width: 90%;
+    max-width: 28rem; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Animación al cargar */
+}
+
+/* Efecto al cargar la caja de login */
+.login-caja:active { /* Puedes cambiar a :hover si quieres un efecto al pasar el mouse */
+    transform: translateY(-0.5rem); 
+}
+
+.logo-link {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.login-logo {
+    width: 20%;
+    max-width: 15rem; /* Tamaño del logo */
+    height: auto;
+    object-fit: contain;
+}
+
+.login-header {
+    margin-bottom: 2.5rem; /* Espacio debajo del encabezado */
+}
+
+.login-header h2 {
+    color: #4C6879;
+    font-size: 2.2rem; /* Título un poco más grande */
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.login-header p {
+    color: #667085;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* --- ESTILOS DEL FORMULARIO --- */
+.formulario-login-pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Alinea etiquetas a la izquierda */
+}
+
+.grupo-input label {
+    font-size: 1rem;
+    margin-bottom: 0.6rem; /* Más espacio entre label e input */
+    font-weight: 600; /* Etiquetas más audaces */
+    color: #4C6879; /* Color de tu marca */
+}
+
+/* Estilos para los campos de texto */
+.grupo-input input {
+    padding: 1.1rem 1.2rem; /* Más padding para inputs más grandes */
+    border: 0.1rem solid #e0e6ed; /* Borde más suave */
+    border-radius: 0.7rem; /* Bordes más redondeados */
+    font-size: 1.1rem;
+    color: #344054;
+    box-shadow: inset 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05); /* Sombra interna sutil */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto de foco para los inputs */
+.grupo-input input:focus {
+    border-color: #FFCC00; /* Borde amarillo al enfocar */
+    box-shadow: 0 0 0 0.3rem rgba(255, 204, 0, 0.3); /* Sombra de foco amarilla */
+    outline: none; /* Elimina el borde de foco predeterminado del navegador */
+}
+
+/* Placeholders con estilo */
+.grupo-input input::placeholder {
+    color: #98a2b3;
+}
+
+
+/* --- OPCIONES (Recordarme y Olvidaste Contraseña) --- */
+.login-opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    margin-top: 0.5rem; /* Ajuste el margen superior */
+}
+
+.recuerdame {
+    display: flex;
+    align-items: center;
+    color: #344054;
+}
+
+.recuerdame input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: #FFCC00; /* Color del checkbox */
+}
+
+.olvido-pass {
+    color: #4C6879; /* Color de tu marca */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.olvido-pass:hover {
+    color: #FFCC00; /* Color de acento al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* --- BOTÓN DE ACCEDER --- */
+.boton-login-form {
+    background-color: #4C6879; 
+    color: white;
+    padding: 1.3rem 1.5rem; /* Más padding para un botón más grande */
+    border: none;
+    border-radius: 0.7rem; /* Bordes más redondeados */
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem; /* Espacio arriba del botón */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+}
+
+.boton-login-form:hover {
+    background-color: #384f5c;
+    transform: translateY(-0.1rem); /* Pequeño efecto hover */
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+.boton-login-form:active {
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* --- ÁREA DE REGISTRO --- */
+.registro-area {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #667085;
+}
+
+.link-registro {
+    color: #FFCC00; /* Color de acento para el enlace de registro */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.link-registro:hover {
+    color: #4C6879;
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVE PARA MÓVILES --- */
+@media (max-width: 500px) {
+    .login-caja {
+        padding: 2.5rem; /* Menos padding en móviles */
+    }
+    .login-header h2 {
+        font-size: 1.8rem;
+    }
+    .login-opciones {
+        flex-direction: column; /* Apila las opciones en móvil */
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
+
+/* Asegura que los campos de entrada y el botón ocupen todo el ancho disponible */
+.grupo-input input[type="email"],
+.grupo-input input[type="password"],
+.boton-login-form {
+    width: 100%; 
+    box-sizing: border-box; /* Asegura que el padding no añada ancho extra */
+}

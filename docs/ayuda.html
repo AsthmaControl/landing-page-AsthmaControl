@@ -5,78 +5,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayuda - AsthmaControl</title>
-  <link rel="stylesheet" href="assets/css/styles.css"> <!-- Reutiliza el mismo CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+
+  <!-- ---------------- HEADER ---------------- -->
   <header>
     <nav class="top-header">
       <a href="index.html" class="AsthmaControl">
         <img height="25" src="assets/images/asthamcontrol.png" alt="">
         <span class="AsthmaControl-texto">AsthmaControl</span>
       </a>
+
 <ul class="barra-de-navegacion">
     <li><a href="index.html">Inicio</a></li>
-    <li><a href="tecnologia-datos.html">Tecnología y Datos</a></li>
-    <li><a href="beneficios.html">Beneficios y Funciones</a></li>
-    <li><a href="ayuda.html">Ayuda y Contacto</a></li>
-    <li><a href="medicos.html" class="nav-doctor">Modo Doctor</a></li>
+    <li><a href="tecnologia-datos.html">¿Qué brindamos?</a></li>
+    <li><a href="ayuda.html">Contacto al cliente</a></li>
+    <li><a href="panel-doctor.html" id="boton-doctor-id"class="boton-doctor">Simulación de Panel Médico</a></li>
+    <li class="item-login">
+    <a href="lp-login.html" id="boton-login-id"class="boton-login">
+        Iniciar Sesión
+    </a>
 </ul>
     </nav>
   </header>
-<section class="seccion-ayuda">
-  <div class="div-ayuda">
-    <div class="div-ayuda-p">
-    <h2>Contáctanos</h2>
-    <p>Si tuviste algun problema con la aplicación, o deseas enviar posibles sugerencias
-      para poder implementar en el futuro, simplemente rellena el formulario de al lado,
-      estamos completamente dispuestos a tomar consejos de nuestros clientes
-    </p>
-    </div>
-    <form class="formulario-ayuda">
-      <div class="campo">
-        <label for="inicio-uso">¿Desde cuándo usas AsthmaControl? <span style="font-weight: normal; font-size: 12px;">(pulsa el calendario para seleccionar)</span></label>
-        <input type="month" id="inicio-uso" name="inicio-uso" min="2025-01">
-        <label for="problema">¿Qué problema experimentaste?</label>
-        <textarea type="text" class="input-grande" id="" name=""></textarea>
-        <label for="sugerencia">¿Que sugerencia envías al respecto?</label>
-        <textarea type="text" class="input-grande" id="" name=""></textarea>
+
+  <!-- ---------------- SECCIÓN AYUDA Y CONTACTO ---------------- -->
+  <section class="seccion-ayuda">
+  <div class="ayuda-grid">
+
+    <!-- Texto -->
+    <div class="ayuda-info">
+      <h2>Contáctanos</h2>
+      <p>
+        Si tuviste algún problema o deseas enviarnos una sugerencia,
+        completa el siguiente formulario. Nuestro equipo la revisará y te responderá 
+        a la brevedad.
+      </p>
+
+      <div class="ayuda-highlight">
+        <h3>Soporte directo</h3>
+        <p>Puedes escribirnos también a:</p>
+        <a href="mailto:soporte@asthmacontrol.com" class="correo-ayuda">
+          soporte@asthmacontrol.com
+        </a>
       </div>
-      <button class="enviar-formulario"type="submit">Enviar</button>
+    </div>
+
+    <!-- Formulario -->
+    <form class="formulario-ayuda" enctype="multipart/form-data">
+
+      <h3 class="form-titulo">Formulario de Contacto</h3>
+
+      <div class="campo">
+        <label>Nombre completo</label>
+        <input type="text" placeholder="Ej: Juan Pérez" required>
+      </div>
+
+      <div class="campo">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="tuemail@ejemplo.com" required>
+      </div>
+
+      <div class="campo">
+        <label>¿Desde cuándo usas AsthmaControl?</label>
+        <input type="month" min="2025-01">
+      </div>
+
+      <div class="campo">
+        <label>Tipo de consulta</label>
+        <select required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="problema">Problema técnico</option>
+          <option value="sugerencia">Sugerencia de mejora</option>
+          <option value="duda">Duda sobre el funcionamiento</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>Gravedad del problema</label>
+        <select>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="baja">Baja (no afecta el uso)</option>
+          <option value="media">Media (dificulta el uso)</option>
+          <option value="alta">Alta (no puedo usar la app)</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>Describe el problema</label>
+        <textarea class="input-grande" placeholder="Cuéntanos qué ocurrió"></textarea>
+      </div>
+
+      <div class="campo">
+        <label>Sugerencia o comentario adicional</label>
+        <textarea class="input-grande"></textarea>
+      </div>
+
+      <div class="campo">
+        <label>Adjuntar captura o archivo (opcional)</label>
+        <input type="file" accept="image/*,.pdf">
+      </div>
+
+      <div class="campo-check">
+        <input type="checkbox" required>
+        <label>Acepto la política de privacidad.</label>
+      </div>
+
+      <button type="submit" class="enviar-formulario">Enviar mensaje</button>
+
     </form>
+
   </div>
 </section>
 
-<footer class="footer">
-  <div class="footer-contenedor">
-      
-    <div class="footer-logo">
-      <img src="assets/images/asthamcontrol.png" height="30" alt="AsthmaControl">
-      <span>AsthmaControl</span>
+
+  <!-- ---------------- FOOTER ---------------- -->
+  <footer class="footer">
+    <div class="footer-contenedor">
+        
+      <div class="footer-logo">
+        <img src="assets/images/asthamcontrol.png" height="30" alt="AsthmaControl">
+        <span>AsthmaControl</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">¿Qué es AsthmaControl?</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="como-funciona.html">Cómo funciona</a>
+        <a href="ayuda.html">Contacto</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><img src="assets/images/icon-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/icon-instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/images/icon-twitter.png" alt="Twitter"></a>
+      </div>
+
+      <div class="footer-politicas">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Contacto</a>
+      </div>
+
     </div>
 
-    <div class="footer-links">
-      <a href="about.html">¿Qué es AsthmaControl?</a>
-      <a href="beneficios.html">Beneficios</a>
-      <a href="como-funciona.html">Cómo funciona</a>
-      <a href="ayuda.html">Contacto</a>
-    </div>
+    <p class="footer-copy">© 2025 AsthmaControl. Todos los derechos reservados.</p>
+  </footer>
 
-    <div class="footer-social">
-      <a href="#"><img src="assets/images/icon-facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="assets/images/icon-instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="assets/images/icon-twitter.png" alt="Twitter"></a>
-    </div>
-
-    <div class="footer-politicas">
-      <a href="#">Política de Privacidad</a>
-      <a href="#">Términos y Condiciones</a>
-      <a href="#">Contacto</a>
-    </div>
-
-  </div>
-
-  <p class="footer-copy">© 2025 AsthmaControl. Todos los derechos reservados.</p>
-</footer>
 </body>
 </html>
