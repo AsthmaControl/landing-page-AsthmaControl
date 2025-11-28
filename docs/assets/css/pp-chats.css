@@ -1,0 +1,211 @@
+/* ======================================= */
+/* ====== ESTILOS ESPECÍFICOS: CHATS ====== */
+/* ======================================= */
+
+.chat-app-container {
+    display: flex;
+    margin-top: 1.25rem;
+    height: calc(100vh - 7.5rem); /* Ajusta la altura para caber en la ventana */
+    border-radius: 1.125rem;
+    overflow: hidden;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+    background-color: #fff;
+}
+
+/* Panel Izquierdo: Lista de Chats */
+.chat-list-panel {
+    width: 21.875rem;
+    border-right: .0625rem solid #eee;
+    background-color: #fcfcfc;
+    overflow-y: auto;
+}
+
+.search-chat {
+    padding: .9375rem;
+    border-bottom: .0625rem solid #eee;
+}
+
+.chat-list-panel .search-input {
+    width: 100%;
+    border-radius: 1.25rem;
+    padding: .5rem .9375rem;
+    border: .0625rem solid #ddd;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: .9375rem;
+    cursor: pointer;
+    border-bottom: .0625rem solid #eee;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.chat-item:hover {
+    background-color: #f0f0f0;
+}
+
+.active-chat {
+    background-color: #e8f5ff; /* Color para el chat seleccionado */
+}
+
+.chat-avatar {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: .9375rem;
+}
+
+.chat-info {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.chat-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #4C6879;
+}
+
+.chat-info p {
+    margin: .1875rem 0 0 0;
+    font-size: .8125rem;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-time {
+    font-size: .75rem;
+    color: #aaa;
+}
+
+.unread-chat .unread-count {
+    background-color: #ff744e; /* Color de alerta */
+    color: white;
+    font-size: .75rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: .125rem .4375rem;
+    position: absolute;
+    right: .9375rem;
+}
+
+
+/* Panel Derecho: Ventana de Chat */
+.chat-window-panel {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header-info {
+    padding: .9375rem 1.25rem;
+    border-bottom: .0625rem solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.chat-header-info h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.report-link {
+    text-decoration: none;
+    color: #72c4ff;
+    font-size: .875rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.report-link:hover {
+    color: #4C6879;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 1.25rem;
+    overflow-y: auto;
+    background-color: #f7f9fc;
+}
+
+.message {
+    max-width: 60%;
+    margin-bottom: .9375rem;
+    padding: .625rem .9375rem;
+    border-radius: .9375rem;
+    position: relative;
+    box-shadow: 0 .0625rem .1875rem rgba(0,0,0,0.08);
+}
+
+.message p {
+    margin: 0;
+    font-size: .9375rem;
+}
+
+.message-time {
+    font-size: .625rem;
+    color: #aaa;
+    display: block;
+    margin-top: .3125rem;
+    text-align: right;
+}
+
+/* Estilo para mensajes del doctor (salientes) */
+.doctor-message {
+    margin-left: auto;
+    background-color: #72c4ff;
+    color: white;
+    border-bottom-right-radius: 0;
+}
+
+.doctor-message .message-time {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilo para mensajes del paciente/cuidador (entrantes) */
+.patient-message {
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #333;
+    border-bottom-left-radius: 0;
+    border: .0625rem solid #ddd;
+}
+
+
+.chat-input-area {
+    padding: .9375rem 1.25rem;
+    border-top: .0625rem solid #eee;
+    display: flex;
+    background-color: #fff;
+}
+
+.chat-input-area textarea {
+    flex-grow: 1;
+    border: .0625rem solid #ddd;
+    border-radius: .5rem;
+    padding: .625rem;
+    resize: none;
+    font-size: 1rem;
+    margin-right: .625rem;
+    outline: none;
+}
+
+.send-btn {
+  background-color: orange;
+  border: 0rem solid black;
+  border-radius: .3125rem;
+    width: 6.25rem;
+    font-weight: 600;
+}
+
+/* Reutilizando estilos de botones de la sección Pacientes */
+/* .report-btn y .chat-btn se usan para el acceso directo a datos/comunicación */
+

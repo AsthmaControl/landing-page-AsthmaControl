@@ -266,3 +266,122 @@
 
 
 
+
+
+/* ================== MEDIA QUERY: CELULARES ================== */
+@media (max-width: 768px) {
+
+    /* Sección principal */
+    .seccion-principal-datos {
+        padding: 2rem 1rem 2rem 1rem; /* reducir padding lateral */
+    }
+
+    .seccion-principal-datos h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .subtitulo-datos {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    /* Contenedor de bloques de información */
+    .contenedor-innovacion {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .bloque-data {
+        border-left: none;               /* quitar la barra lateral */
+        border-top: 5px solid #4C6879;   /* alternativa visual */
+        border-radius: 10px;
+        padding: 1.5rem;
+    }
+
+    .bloque-data h2 {
+        font-size: 1.5rem;
+    }
+
+    .bloque-data p, 
+    .bloque-data ul {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .bloque-data ul li {
+        padding-left: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Gráfica simulada */
+    .grafica-simulada img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pie-grafica {
+        font-size: 0.8rem;
+    }
+
+    /* Hero médico */
+    .hero-medico {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .hero-medico h1 {
+        font-size: 2rem;
+    }
+
+    .hero-medico p {
+        font-size: 1rem;
+    }
+
+    /* Lista de características: pasar de 3 columnas a 1 columna */
+    .lista-caracteristicas {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .caracteristica-item {
+        flex: 1 1 100%;
+    }
+
+    .caracteristica-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .caracteristica-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Llamada a la acción (CTA) */
+    .cta-simulacion {
+        padding: 2rem 1rem;
+    }
+
+    .cta-simulacion h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-simulacion p {
+        font-size: 1rem;
+    }
+
+    .boton-simulacion,
+    .boton-medico-final,
+    .boton-seguridad {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Llamada final médico */
+    .llamada-final-doctor h1 {
+        font-size: 1.8rem;
+    }
+
+    .llamada-final-doctor {
+        padding: 2rem 1rem;
+    }
+}

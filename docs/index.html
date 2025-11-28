@@ -6,27 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controla tu asma fácilmente</title>
   <link rel="stylesheet" href="assets/css/styles.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="assets/css/menu-toggle.css"> <!-- Enlace al archivo CSS -->
 </head>
 
 <body>
-    <header>
-        <nav class="top-header">
-            <a href="index.html" class="AsthmaControl">
-                <img height="25" src="assets/images/asthamcontrol.png" alt="">
-                <span class="AsthmaControl-texto">AsthmaControl</span>
-            </a>
-<ul class="barra-de-navegacion">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="tecnologia-datos.html">¿Qué brindamos?</a></li>
-    <li><a href="ayuda.html">Contacto al cliente</a></li>
-    <li><a href="panel-doctor.html" id="boton-doctor-id"class="boton-doctor">Simulación de Panel Médico</a></li>
-    <li class="item-login">
-    <a href="lp-login.html" id="boton-login-id"class="boton-login">
-        Iniciar Sesión
+<header>
+  <nav class="top-header">
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+    <!-- Logo -->
+    <a href="index.html" class="AsthmaControl">
+      <img height="25" src="assets/images/asthamcontrol.png" alt="">
+      <span class="AsthmaControl-texto">AsthmaControl</span>
     </a>
-</ul>
-        </nav>
-    </header>
+
+    <!-- Menú -->
+    <ul class="barra-de-navegacion">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tecnologia-datos.html">¿Qué brindamos?</a></li>
+      <li><a href="ayuda.html">Contacto al cliente</a></li>
+      <li><a href="panel-doctor.html" class="boton-doctor">Simulación de Panel Médico</a></li>
+      <li><a href="lp-login.html" class="boton-login">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+</header>
     <section class="hero">
       <div class="hero-texto">
         <h1>Control del asma de forma inteligente y conexión constante con el médico.</h1>
@@ -179,7 +183,21 @@
   <p class="footer-copy">© 2025 AsthmaControl. Todos los derechos reservados.</p>
 </footer>
 
-    <script src="java.js"></script>
+
+<div id="modal-confirmacion" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2>Confirmación</h2>
+    <p>¿Deseas abrir la simulación del panel médico?</p>
+    <div class="modal-botones">
+      <button id="modal-cancelar" class="boton-cancelar">Cancelar</button>
+      <button id="modal-aceptar" class="boton-aceptar">Aceptar</button>
+    </div>
+  </div>
+</div>
+    <script src="login.js"></script>
+    <script src="menu_toggle.js"></script>
 
 
 </body>
+</html>

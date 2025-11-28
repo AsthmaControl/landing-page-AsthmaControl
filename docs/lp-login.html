@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - AsthmaControl</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - AsthmaControl</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/lp-login.css">
-    </head>
+</head>
 <body>
+  
+<div class="login-contenedor-pagina">
+  <div class="login-caja">
     
-    <div class="login-contenedor-pagina">
-        
-        <div class="login-caja">
-            
-            <a href="index.html" class="logo-link">
-                <img src="assets/images/asthmacontrol-white.png" alt="AsthmaControl Logo" class="login-logo">
-            </a>
-            
-            <div class="login-header">
-                <h2>Bienvenido de nuevo</h2>
-                <p>Introduce tus credenciales para acceder a tu cuenta.</p>
-            </div>
-            
-            <form class="formulario-login-pagina">
-                
-                <div class="grupo-input">
-                    <label for="email">
-                        Correo Electrónico
-                    </label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-                </div>
-                
-                <div class="grupo-input">
-                    <label for="password">
-                        Contraseña
-                    </label>
-                    <input type="password" id="password" name="password" placeholder="••••••••" required>
-                </div>
-                
-                <div class="login-opciones">
-                    <div class="recuerdame">
-                        <input type="checkbox" id="recuerdame">
-                        <label for="recuerdame">Recordarme</label>
-                    </div>
-                    <a href="#" class="olvido-pass">¿Olvidaste tu contraseña?</a>
-                </div>
-                
-                <button type="submit" class="boton-login-form">Acceder</button>
-                
-                <div class="registro-area">
-                    <p>¿No tienes cuenta? <a href="#" class="link-registro">Regístrate aquí</a></p>
-                </div>
-            </form>
-        </div>
-        
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/asthmacontrol-white.png" alt="AsthmaControl Logo" class="login-logo">
+    </a>
+
+    <div class="login-header">
+      <h2>Bienvenido de nuevo</h2>
+      <p>Introduce tus credenciales para acceder a tu cuenta.</p>
     </div>
+
+    <!-- FORMULARIO CON ID -->
+    <form id="loginForm" class="formulario-login-pagina">
+      <div class="grupo-input">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="grupo-input">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="login-opciones">
+        <div class="recuerdame">
+          <input type="checkbox" id="recuerdame">
+          <label for="recuerdame">Recordarme</label>
+        </div>
+        <a href="#" class="olvido-pass">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <p id="mensaje-error" class="mensaje-error" style="display:none;"></p>
+
+      <button type="submit" class="boton-login-form">Acceder</button>
+
+      <div class="registro-area">
+        <p>¿No tienes cuenta? <a href="#" class="link-registro">Regístrate aquí</a></p>
+      </div>
+    </form>
     
+  </div>
+</div>
+
+<!-- MODAL DE ÉXITO -->
+<div id="successModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <p>¡Inicio de sesión exitoso!</p>
+  </div>
+</div>
+
+<script src="login.js"></script>
 </body>
 </html>

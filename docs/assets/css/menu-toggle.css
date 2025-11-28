@@ -1,0 +1,80 @@
+
+/* ===== BOTÓN HAMBURGUESA ===== */
+.menu-toggle {
+  display: none; /* oculto en desktop */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4C6879; /* mismo color que el logo */
+}
+
+
+/* ===== MEDIA QUERY - MÓVIL ===== */
+@media (max-width: 768px) {
+    .top-header {
+    justify-content: flex-start; /* todo pegado a la izquierda */
+    gap: 1rem;                   /* separa el botón del logo */
+    padding: 0.5rem 1rem;        /* opcional, reduce padding */
+  }
+
+  .menu-toggle {
+    display: block; /* mostrar botón en móvil */
+  }
+
+  /* Opcional: si quieres que el logo quede al lado del botón */
+  .AsthmaControl {
+    margin-left: 0;  /* elimina margen automático */
+  }
+
+  /* Barra de navegación móvil */
+  .barra-de-navegacion {
+    display: none;                /* oculto por defecto */
+    flex-direction: column;       /* vertical */
+    position: absolute;
+    top: 3.75rem;                 /* justo debajo del header */
+    left: 0;                      /* pegado a la izquierda */
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    width: fit-content;           /* ocupa solo lo necesario */
+    min-width: 10rem;             /* evita que quede muy pequeña */
+    gap: 0.25rem;
+  }
+
+  /* Mostrar menú al activar */
+  .barra-de-navegacion.active {
+    display: flex;
+  }
+
+  /* Ocultar botones no deseados */
+  .barra-de-navegacion .boton-doctor,
+  .barra-de-navegacion .boton-login {
+    display: none;
+  }
+
+  /* Links compactos y pegados a la izquierda */
+  .barra-de-navegacion li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .barra-de-navegacion li a {
+    display: block;
+    padding: 0.25rem 1rem; 
+    font-size: 0.9rem;
+    line-height: 1;               /* reduce espacio vertical */
+    color: #4C6879;
+    text-decoration: none;
+  }
+
+  .barra-de-navegacion li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .barra-de-navegacion .boton-doctor {
+    display: none;
+  }
+}

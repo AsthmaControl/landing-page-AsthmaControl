@@ -7,29 +7,33 @@
   <title>Controla tu asma fácilmente</title>
   <link rel="stylesheet" href="assets/css/styles.css"> <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="assets/css/lp-tecnologia-datos.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="assets/css/menu-toggle.css"> <!-- Enlace al archivo CSS -->
 
 
 </head>
 
 <body>
-    <header>
-        <nav class="top-header">
-            <a href="index.html" class="AsthmaControl">
-                <img height="25" src="assets/images/asthamcontrol.png" alt="">
-                <span class="AsthmaControl-texto">AsthmaControl</span>
-            </a>
-<ul class="barra-de-navegacion">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="tecnologia-datos.html">¿Qué brindamos?</a></li>
-    <li><a href="ayuda.html">Contacto al cliente</a></li>
-    <li><a href="panel-doctor.html" id="boton-doctor-id"class="boton-doctor">Simulación de Panel Médico</a></li>
-    <li class="item-login">
-    <a href="lp-login.html" id="boton-login-id"class="boton-login">
-        Iniciar Sesión
+<header>
+  <nav class="top-header">
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+    <!-- Logo -->
+    <a href="index.html" class="AsthmaControl">
+      <img height="25" src="assets/images/asthamcontrol.png" alt="">
+      <span class="AsthmaControl-texto">AsthmaControl</span>
     </a>
-</ul>
-        </nav>
-    </header>
+
+    <!-- Menú -->
+    <ul class="barra-de-navegacion">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tecnologia-datos.html">¿Qué brindamos?</a></li>
+      <li><a href="ayuda.html">Contacto al cliente</a></li>
+      <li><a href="panel-doctor.html" class="boton-doctor">Simulación de Panel Médico</a></li>
+      <li><a href="lp-login.html" class="boton-login">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+</header>
 <section class="seccion-principal-datos">
     <h1>Tecnología que transforma la gestión del Asma</h1>
     <p class="subtitulo-datos">AsthmaControl proporciona a los clínicos la data objetiva necesaria para una toma de decisiones más rápida y precisa, alineada con las guías GINA.</p>
@@ -130,5 +134,6 @@
 
   <p class="footer-copy">© 2025 AsthmaControl. Todos los derechos reservados.</p>
 </footer>
+<script src="menu_toggle.js"></script>
 </body>
 </html>
