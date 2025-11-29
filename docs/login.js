@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modalContent.classList.remove("fade-out");
 
         if (email === doctorEmail) {
-          window.location.href = "panel-medico.html";
+          window.location.href = "panel-doctor.html";
         } else if (email === patientEmail) {
           window.location.href = "panel-paciente.html";
         }
