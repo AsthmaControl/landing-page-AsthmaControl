@@ -54,3 +54,174 @@
     font-weight: normal;
     color: #333;
 }
+
+
+/* ============================================== */
+/* ====== ESTILOS ESPECÍFICOS: CONFIGURACIÓN ====== */
+/* ============================================== */
+
+.config-container {
+    padding: 1.5625rem;
+    margin-top: 1.25rem;
+    background-color: #fff;
+    border-radius: 1.125rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+/* Pestañas de Navegación */
+.config-tabs {
+    display: flex;
+    border-bottom: .125rem solid #eee;
+    margin-bottom: 1.875rem;
+}
+
+.tab-btn {
+    padding: .75rem 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #888;
+    font-weight: 500;
+    transition: color 0.2s, border-bottom 0.2s;
+    margin-right: .9375rem;
+    border-bottom: .1875rem solid transparent;
+}
+
+.tab-btn:hover {
+    color: #4C6879;
+}
+
+.tab-btn.active-tab {
+    color: #72c4ff; /* Color principal de enfoque */
+    border-bottom: .1875rem solid #72c4ff;
+}
+
+/* Contenido de la Configuración */
+.config-content {
+    display: none;
+    padding: .625rem 0;
+}
+
+.config-content.active-content {
+    display: block;
+}
+
+.config-content h3 {
+    color: #4C6879;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Estilos de Formularios (Perfil y Seguridad) */
+.form-group {
+    margin-bottom: .9375rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: .3125rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 25rem;
+    padding: .625rem;
+    border: .0625rem solid #ddd;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+.form-group input:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+}
+
+.save-btn {
+    padding: .625rem 1.5625rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: .625rem;
+    transition: opacity 0.2s;
+}
+
+/* Estilos de Seguridad */
+.security-settings hr {
+    margin: 1.875rem 0;
+    border: 0;
+    border-top: .0625rem solid #eee;
+    width: 25rem;
+}
+
+.session-info {
+    font-style: italic;
+    color: #666;
+    margin-bottom: .9375rem;
+}
+
+.terminate-btn {
+    background-color: #ff744e; /* Color de alerta */
+    color: white;
+    padding: .5rem .9375rem;
+    border: none;
+    border-radius: .375rem;
+    cursor: pointer;
+    font-size: .875rem;
+    transition: background-color 0.2s;
+}
+
+.terminate-btn:hover {
+    background-color: #cc5c3e;
+}
+
+/* Estilos de Notificaciones (Toggle Switch) */
+.notification-settings {
+    max-width: 37.5rem;
+}
+
+.toggle-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .9375rem 0;
+    border-bottom: .0625rem solid #f0f0f0;
+}
+
+.toggle-group label {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.toggle-switch {
+    width: 2.8125rem;
+    height: 1.5625rem;
+    background-color: #ccc;
+    border-radius: 3.125rem;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.toggle-switch.active-toggle {
+    background-color: #72c4ff; /* Azul activo */
+}
+
+.toggle-circle {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: .1563rem;
+    left: .1563rem;
+    transition: transform 0.2s, left 0.2s;
+}
+
+.active-toggle .toggle-circle {
+    transform: translateX(1.25rem);
+}

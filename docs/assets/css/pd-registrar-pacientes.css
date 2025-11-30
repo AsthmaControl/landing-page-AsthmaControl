@@ -96,22 +96,6 @@
     align-items: center;
 }
 
-.blue-btn {
-    padding: .75rem 1.5625rem;
-    border-radius: .5rem;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #72c4ff;
-    color: white;
-    border: none;
-    transition: background-color 0.2s;
-    margin-right: 1.25rem;
-}
-
-.blue-btn:hover {
-    background-color: #4E89D7;
-}
-
 .success-message {
     padding: .9375rem 1.5625rem;
     border-radius: .5rem;

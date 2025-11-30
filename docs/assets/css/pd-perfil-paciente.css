@@ -1,0 +1,315 @@
+/* Contenedor principal del perfil */
+.report-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1.125rem;
+    box-shadow: 0 .25rem .625rem rgba(0,0,0,0.08);
+}
+
+/* Encabezado del paciente */
+.patient-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .125rem solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.patient-header h2 {
+    margin: 0;
+    color: #4C6879;
+}
+
+.status-badge {
+    padding: .4rem .9rem;
+    border-radius: .7rem;
+    font-weight: bold;
+    font-size: .8rem;
+    color: #fff;
+}
+
+.status-badge.critical { background-color: #ff744e; }
+.status-badge.warning { background-color: #ffcc00; }
+.status-badge.stable { background-color: #72c4ff; }
+
+/* Información general */
+.info-section .info-list p {
+    margin: .35rem 0;
+    font-size: 1rem;
+}
+
+/* Títulos de secciones */
+.section-title {
+    margin-top: 1.8rem;
+    margin-bottom: .7rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Línea de tiempo */
+.timeline {
+    background: #f8f8f8;
+    padding: 1.2rem;
+    border-radius: .7rem;
+    border-left: .25rem solid #4C6879;
+    margin-bottom: 1.5rem;
+}
+
+.timeline p {
+    margin: .4rem 0;
+    font-size: .95rem;
+}
+
+/* Alertas */
+.alert-list {
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+    margin-bottom: 1.5rem;
+}
+
+.alert-card {
+    padding: 1rem;
+    border-radius: .7rem;
+    color: #fff;
+}
+
+.alert-card.critical { background-color: #ff744e; }
+.alert-card.warning { background-color: #ffcc00; color: #333; }
+.alert-card.stable { background-color: #72c4ff; }
+
+/* Evaluación y recomendaciones */
+.analysis-section textarea.report-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    border-radius: .7rem;
+    border: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+    outline: none;
+}
+
+/* Botones de acción */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-back {
+    padding: .5rem 1.2rem;
+    background: #ccc;
+    color: #333;
+    border-radius: .4rem;
+    text-decoration: none;
+}
+
+.btn-back:hover { background: #b6b6b6; }
+
+.btn-attend {
+    padding: .5rem 1.2rem;
+    background: #9bffbe;
+    color: #2f4c3b;
+    border-radius: .4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-attend:hover { background: #7ae0a1; }
+
+.btn-follow {
+    padding: .5rem 1.2rem;
+    background: #96c9ff;
+    color: white;
+    border-radius: .4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-follow:hover { background: #83b5e0; }
+
+.btn-view-alert {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    background-color: #FF5C5C;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.btn-view-alert:hover {
+    background-color: #E04C4C;
+}
+
+/* Contenedor de tarjetas superiores */
+.top-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Tarjeta individual */
+.card {
+    flex: 1 1 250px;
+    background: #ffffff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.12);
+}
+
+.card h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #4C6879;
+}
+
+.card p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Adherencia dentro de tarjeta */
+.adherence-card {
+    border-left: .3rem solid #4C6879;
+    background: #ffffff;
+}
+
+.adherence-timeline {
+    margin-top: 0.75rem;
+}
+
+.adherence-timeline span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.adherence-timeline span.taken { color: #4C6879; }
+.adherence-timeline span.missed { color: #ff744e; }
+
+
+.recent-alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.recent-alert p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.recent-alert .btn-view-alert {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+
+/* Tarjeta de alertas recientes con alto contraste */
+.card.alerts-card {
+    background-color: #ffefef; /* fondo rojo muy suave */
+    border-left: 0.4rem solid #ff5c5c; /* barra roja para indicar alerta */
+    padding: 1.25rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,0.08);
+}
+
+/* Cada alerta dentro de la tarjeta */
+.recent-alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.recent-alert p {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #900; /* texto rojo oscuro para resaltar */
+}
+
+.recent-alert .btn-view-alert {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.recent-alert .btn-view-alert:hover {
+    background-color: #e04c4c;
+}
+
+.btn-export-pdf {
+    background-color: #4C6879;
+    color: white;
+    padding: 0.8rem 2rem;      /* más grande que antes */
+    font-size: 1.2rem;         /* fuente más grande */
+    font-weight: 600;           /* un poco más destacada */
+    border-radius: 0.8rem;     /* bordes más redondeados */
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-export-pdf:hover {
+    background-color: #3b4f61;
+    transform: translateY(-2px); /* efecto hover más dinámico */
+}
+
+.btn-export-pdf {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.report-container table,
+.report-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.report-container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.chart-section img {
+    max-width: 100%;
+    height: auto;
+}
+#pdfContent {
+    overflow: visible; /* importante */
+}
+
+/* Gráfico que se ajusta al contenedor */
+#pdfContent .chart-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Evitar que se corte sección */
+#pdfContent .bitacora-section,
+#pdfContent .chart-section {
+    page-break-inside: avoid;
+}

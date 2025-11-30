@@ -7,6 +7,8 @@
     <title>Historial y Síntomas - Control de Asma</title>
     <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/pp-historial.css">
+                                                    <link rel="stylesheet" href="assets/css/lp-login.css">
+
 
 </head>
 
@@ -20,7 +22,7 @@
              <li><a href="pp-logistica.html"><img src="assets/images/logistica-y-recursos.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Calendario</a></li>
             <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
             <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
-            <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
         </ul>
     </div>
 
@@ -41,10 +43,8 @@
             </div>
 
             <div class="chart-section">
-                <h3>Tendencia de Síntomas y Uso de Rescate</h3>
-                <div class="chart-box">
-                    <img src="assets/images/paciente-grafico.png" height="350" width="500">
-                </div>
+                <h3>Tendencia de Adherencia y Síntomas</h3>
+                    <img src="assets/images/paciente-grafico.png" height="350" width="950s" style="margin-left: 12.25rem;">
             </div>
 
             <div class="bitacora-grid">
@@ -56,7 +56,7 @@
                             <span class="bitacora-icon">🚨</span>
                             <div class="bitacora-info">
                                 <h4>Crisis Severa</h4>
-                                <p>Gatillante: Alergia a polen. Uso 3 dosis de rescate.</p>
+                                <p>Desencadenante: Alergia al polen. Uso de 3 dosis de rescate.</p>
                             </div>
                             <span class="bitacora-time">18/11/2025 - 11:30 AM</span>
                         </div>
@@ -64,7 +64,7 @@
                             <span class="bitacora-icon">🟡</span>
                             <div class="bitacora-info">
                                 <h4>Ataque Leve</h4>
-                                <p>Gatillante: Ejercicio físico intenso. Uso 1 dosis de rescate.</p>
+                                <p>Desencadenante: Ejercicio físico intenso. Uso 1 dosis de rescate.</p>
                             </div>
                             <span class="bitacora-time">20/11/2025 - 4:00 PM</span>
                         </div>
@@ -89,5 +89,31 @@
             </div>
         </div>
     </div>
+
+    
+
+
+<!-- MODAL PARA CONFIRMAR LOGOUT -->
+<div id="logoutModal" class="modal" style="display:none;">
+  <div class="modal-content" style="padding: 2rem 3rem;">
+    <p style="margin:0 0 1rem 0;">¿Deseas cerrar sesión?</p>
+
+    <div class="modal-buttons" style="margin-top:1.5rem; display:flex; gap:1rem; justify-content:center;">
+      <button id="logoutCancel" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#ccc; cursor:pointer;">
+        Cancelar
+      </button>
+
+      <button id="logoutConfirm" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#4C6879; color:white; cursor:pointer;">
+        Cerrar sesión
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/scripts/logout.js"></script>
+
+
 </body>
 </html>

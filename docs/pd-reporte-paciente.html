@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Alerta - Mariana Pérez</title>
+
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/panel-general-botones.css">
+    <link rel="stylesheet" href="assets/css/lp-login.css">
+
+    <!-- Estilos del reporte -->
+    <link rel="stylesheet" href="assets/css/pd-reporte-paciente.css">
+</head>
+
+<body>
+  <div class="sidebar">
+  <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Panel</h2>
+  <ul class="panel-lista">
+    <li><a href="panel-doctor.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+    <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
+    <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
+    <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+  </ul>
+</div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <header>
+            <span class="toggle-btn">☰</span>
+            <h2>Reporte de Alerta: Mariana Pérez</h2>
+        </header>
+
+        <div class="report-container">
+
+            <!-- Encabezado -->
+            <div class="patient-header">
+                <h2>Mariana Pérez (12 años)</h2>
+                <span class="status-badge">CRÍTICA</span>
+            </div>
+
+            <!-- Información general -->
+            <div class="info-section">
+                <h3 class="section-title">Información general</h3>
+                <div class="info-list">
+                    <p><strong>Última dosis registrada:</strong> 20/11/2025 - 8:00 AM</p>
+                    <p><strong>Días sin medicación:</strong> 4 días consecutivos</p>
+                    <p><strong>Tipo de inhalador:</strong> Budesonida 200mcg</p>
+                </div>
+            </div>
+
+            <!-- Línea de eventos -->
+            <div class="timeline-section">
+                <h3 class="section-title">Línea de tiempo del evento</h3>
+                <div class="timeline">
+                    <p>📍 17/11/2025 Última dosis registrada correctamente.</p>
+                    <p>⚠️ 18/11/2025 Sistema detecta primera omisión.</p>
+                    <p>⚠️ 19/11/2025 Segunda omisión consecutiva.</p>
+                    <p>🔥 20/11/2025 Cuarta omisión. Alerta crítica generada automáticamente.</p>
+                </div>
+            </div>
+
+            <!-- Evaluación médica -->
+<div class="analysis-section">
+    <h3 class="section-title">Evaluación y recomendaciones</h3>
+    <div class="analysis-box">
+        <textarea class="report-textarea" placeholder="Escribe aquí toda la evaluación y las recomendaciones para la paciente..."></textarea>
+    </div>
+</div>
+            <!-- Botones -->
+            <div class="action-buttons">
+                <a href="pd-alertas.html" class="btn-back">← Volver</a>
+                <a href="pd-alertas.html"><button class="btn-attend">Marcar como atendida</button></a>
+                <a href="pd-alertas.html"><button class="btn-follow">Marcar en seguimiento</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Logout -->
+    <div id="logoutModal" class="modal" style="display:none;">
+        <div class="modal-content" style="padding: 2rem 3rem;">
+            <p>¿Deseas cerrar sesión?</p>
+
+            <div class="modal-buttons" style="margin-top:1.5rem; display:flex; gap:1rem; justify-content:center;">
+                <button id="logoutCancel" style="padding:0.7rem 1.4rem; background:#ccc; border:none; border-radius:0.5rem;">Cancelar</button>
+                <button id="logoutConfirm" style="padding:0.7rem 1.4rem; background:#4C6879; color:white; border:none; border-radius:0.5rem;">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/logout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Mariana Pérez</title>
+
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/panel-general-botones.css">
+    <link rel="stylesheet" href="assets/css/lp-login.css">
+    <link rel="stylesheet" href="assets/css/pd-perfil-paciente.css">
+    <link rel="stylesheet" href="assets/css/pp-historial.css">
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+      <h2 class="logo"><img height="25" src="assets/images/asthamcontrol.png" alt="" style="vertical-align: -4px;">Panel</h2>
+  <ul class="panel-lista">
+    <li><a href="panel-doctor.html"><img src="assets/images/home-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Inicio</a></li>
+    <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
+    <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
+    <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
+<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+  </ul>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+      <header>
+          <span class="toggle-btn">☰</span>
+          <h2>Información del Paciente</h2>
+      </header>
+<div id="pdfContent">
+      <div class="report-container" style="margin-top: 1rem;">
+
+          <!-- Encabezado -->
+          <div class="patient-header">
+              <h2>Mariana Pérez (12 años)</h2>
+          </div>
+
+<!-- Contenedor superior con tarjetas -->
+<div class="top-cards">
+
+    <!-- Información general -->
+    <div class="card">
+        <h4>Información General</h4>
+        <p><strong>Nombre:</strong> Mariana Pérez</p>
+        <p><strong>Edad:</strong> 12 años</p>
+        <p><strong>Sexo:</strong> Femenino</p>
+        <p><strong>Diagnóstico:</strong> Asma Moderada</p>
+        <p><strong>Inhalador:</strong> Budesonida 200mcg</p>
+    </div>
+
+
+
+<!-- Alertas recientes -->
+<div class="card alerts-card">
+    <h4>Alertas recientes</h4>
+    <div class="recent-alert">
+        <p>😷 Omisión Crítica de Dosis: 20/11/2025 - 08:00 AM</p>
+        <a href="pd-alerta-paciente.html" class="btn-view-alert">Ver alerta</a>
+    </div>
+    <div class="recent-alert">
+        <p>🚨 Crisis Severa: 18/11/2025 - 11:30 AM</p>
+        <a href="pd-alerta-paciente.html" class="btn-view-alert">Ver alerta</a>
+    </div>
+    <div class="recent-alert">
+        <p>📉 Ataque Leve: 14/11/2025 - 04:00 PM</p>
+        <a href="pd-alerta-paciente.html" class="btn-view-alert">Ver alerta</a>
+    </div>
+</div>
+
+
+</div>
+
+          <!-- Gráfica de tendencia -->
+          <div class="chart-section">
+              <h3>Tendencia de Adherencia y Síntomas</h3>
+<img src="assets/images/paciente-grafico.png" style="width: 100%; height: auto; display: block;">
+          </div>
+
+          <!-- Bitácoras de crisis y rescate -->
+          <div class="bitacora-grid">
+              <div class="bitacora-section">
+                  <h3>Bitácora de Crisis y Eventos (HU-49)</h3>
+                  <div class="bitacora-list">
+                      <div class="bitacora-item critical-event">
+                          <span class="bitacora-icon">🚨</span>
+                          <div class="bitacora-info">
+                              <h4>Crisis Severa</h4>
+                              <p>Desencadenante: Alergia al polen. Uso de 3 dosis de rescate.</p>
+                          </div>
+                          <span class="bitacora-time">18/11/2025 - 11:30 AM</span>
+                      </div>
+                      <div class="bitacora-item mild-event">
+                          <span class="bitacora-icon">🟡</span>
+                          <div class="bitacora-info">
+                              <h4>Ataque Leve</h4>
+                              <p>Desencadenante: Ejercicio físico intenso. Uso 1 dosis de rescate.</p>
+                          </div>
+                          <span class="bitacora-time">20/11/2025 - 4:00 PM</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="bitacora-section">
+                  <h3>Bitácora Detallada de Rescate (HU-23)</h3>
+                  <table class="rescue-table">
+                      <thead>
+                          <tr><th>Fecha/Hora</th><th>Dosis</th><th>Motivo</th></tr>
+                      </thead>
+                      <tbody>
+                          <tr><td>20/11/2025 4:00 PM</td><td>1 Inhalación</td><td>Ejercicio</td></tr>
+                          <tr><td>18/11/2025 11:45 AM</td><td>2 Inhalaciones</td><td>Crisis Severa</td></tr>
+                          <tr><td>18/11/2025 11:30 AM</td><td>1 Inhalación</td><td>Crisis Severa</td></tr>
+                          <tr><td>15/11/2025 8:00 AM</td><td>1 Inhalación</td><td>Tos matutina</td></tr>
+                      </tbody>
+                  </table>
+                  <p class="pattern-insight">💡 <strong>Patrón de Riesgo (HU-20):</strong> La mayoría de las crisis severas ocurren entre 10 AM y 1 PM.</p>
+              </div>
+          </div>
+<div class="export-pdf-section" style="text-align: center; margin-top: 2rem;">
+    <button id="exportPdfBtn" class="btn-export-pdf">📄 Exportar a PDF</button>
+</div>
+      </div>
+      
+  </div>
+</div>
+<!-- MODAL PARA CONFIRMAR LOGOUT -->
+<div id="logoutModal" class="modal" style="display:none;">
+  <div class="modal-content" style="padding: 2rem 3rem;">
+    <p style="margin:0 0 1rem 0;">¿Deseas cerrar sesión?</p>
+
+    <div class="modal-buttons" style="margin-top:1.5rem; display:flex; gap:1rem; justify-content:center;">
+      <button id="logoutCancel" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#ccc; cursor:pointer;">
+        Cancelar
+      </button>
+
+      <button id="logoutConfirm" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#4C6879; color:white; cursor:pointer;">
+        Cerrar sesión
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+document.getElementById("exportPdfBtn").addEventListener("click", function() {
+    const element = document.getElementById("pdfContent");
+    const opt = {
+        margin: 10, // margen más generoso
+        filename: 'Informe_Mariana_Perez.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, scrollY: -window.scrollY },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // usar mm para evitar corte
+    };
+    html2pdf().set(opt).from(element).save();
+});
+
+</script>
+<script src="assets/scripts/logout.js"></script>
+</body>
+</html>
+

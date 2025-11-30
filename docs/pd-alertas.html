@@ -7,6 +7,10 @@
     <title>Alertas Críticas - Panel Médico</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/pd-alertas.css">
+                        <link rel="stylesheet" href="assets/css/panel-general-botones.css">
+                                                                    <link rel="stylesheet" href="assets/css/lp-login.css">
+
+
 
 </head>
 
@@ -18,7 +22,7 @@
     <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
     <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
     <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
-    <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
   </ul>
 </div>
 
@@ -47,7 +51,7 @@
                         <p class="alert-time">Última dosis registrada: 20/11/2025 - 8:00 AM</p>
                     </div>
                     <div class="alert-actions">
-                        <a href="reporte_mariana.html" class="action-btn report-btn">Marcar como atendida</a>
+                        <a href="pd-reporte-paciente.html" class="action-btn report-btn">Ver detalles</a>
                         <button class="action-btn track-btn">Marcar en Seguimiento</button>
                     </div>
                 </div>
@@ -63,7 +67,7 @@
                         <p class="alert-time">Generada hace 2 horas.</p>
                     </div>
                     <div class="alert-actions">
-                        <a href="reporte_pedro.html" class="action-btn report-btn">Marcar como atendida</a>
+                        <a href="reporte_pedro.html" class="action-btn report-btn">Ver detalles</a>
                         <button class="action-btn track-btn">Marcar en Seguimiento</button>
                     </div>
                 </div>
@@ -79,7 +83,7 @@
                         <p class="alert-time">Generada hace 15 horas.</p>
                     </div>
                     <div class="alert-actions">
-                        <a href="reporte_pedro.html" class="action-btn report-btn">Marcar como atendida</a>
+                        <a href="reporte_pedro.html" class="action-btn report-btn">Ver detalles</a>
                         <button class="action-btn track-btn">Marcar en Seguimiento</button>
                     </div>
                 </div>
@@ -87,5 +91,31 @@
             </div>
         </div>
     </div>
+
+    
+
+
+<!-- MODAL PARA CONFIRMAR LOGOUT -->
+<div id="logoutModal" class="modal" style="display:none;">
+  <div class="modal-content" style="padding: 2rem 3rem;">
+    <p style="margin:0 0 1rem 0;">¿Deseas cerrar sesión?</p>
+
+    <div class="modal-buttons" style="margin-top:1.5rem; display:flex; gap:1rem; justify-content:center;">
+      <button id="logoutCancel" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#ccc; cursor:pointer;">
+        Cancelar
+      </button>
+
+      <button id="logoutConfirm" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#4C6879; color:white; cursor:pointer;">
+        Cerrar sesión
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/scripts/logout.js"></script>
+
+
 </body>
 </html>

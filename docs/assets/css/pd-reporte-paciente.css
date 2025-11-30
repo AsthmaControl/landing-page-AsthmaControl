@@ -1,0 +1,181 @@
+/* =========================================== */
+/*       ESTILOS MEJORADOS: REPORTE            */
+/* =========================================== */
+
+.report-container {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 800px;
+    font-family: "Inter", Arial, sans-serif;
+    color: #333;
+}
+
+/* ====== Encabezado del paciente ====== */
+.patient-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.patient-header h2 {
+    margin: 0;
+    color: #2f4c68;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.status-badge {
+    padding: .5rem 1rem;
+    background-color: #ff744e;
+    color: #fff;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ====== Información general ====== */
+.info-list p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4C6879;
+}
+
+/* ====== Títulos de secciones ====== */
+.section-title {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #2f4c68;
+    border-left: 4px solid #4C6879;
+    padding-left: 0.8rem;
+}
+
+/* ====== Línea de tiempo ====== */
+.timeline {
+    background: #f5f7fa;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border-left: 5px solid #4C6879;
+    margin-bottom: 1.5rem;
+}
+
+.timeline p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #4C6879;
+}
+
+/* ====== Caja de análisis ====== */
+.analysis-box {
+    background: #eef6ff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    color: #2f4c68;
+    line-height: 1.6;
+}
+
+/* ====== Botones del reporte ====== */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-back,
+.btn-attend,
+.btn-follow {
+    padding: 0.65rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 0.6rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+/* Botón regresar */
+.btn-back {
+    background: #f0f0f0;
+    color: #555;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background: #d9d9d9;
+}
+
+/* Botón atender */
+.btn-attend {
+    background: #9bffbe;
+    color: #2f4c3b;
+}
+
+.btn-attend:hover {
+    background: #7ae0a1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Botón seguimiento */
+.btn-follow {
+    background: #96c9ff;
+    color: #fff;
+}
+
+.btn-follow:hover {
+    background: #83b5e0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ====== Observaciones estilo destacado ====== */
+.observaciones {
+    background: #fdf6f0;
+    border-left: 5px solid #ff744e;
+    padding: 1rem 1.2rem;
+    border-radius: 0.8rem;
+    color: #4C3B2F;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* ====== Textarea para Evaluación y recomendaciones ====== */
+.report-textarea {
+    width: 100%;
+    min-height: 250px;
+    padding: 1rem;
+    border: 1px dashed #ccc;
+    border-radius: 1rem;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #4C6879;
+    line-height: 1.5;
+    resize: vertical; /* permite ajustar altura */
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+        resize: none;
+    overflow: auto;
+    outline: none;   
+}
+
+.report-textarea::placeholder {
+    color: #b0b0b0;
+    font-style: none;
+}
+
+.report-textarea:focus {
+    outline: none;
+    border-color: #4C6879;
+    background-color: #fff; /* sin cambio al escribir */
+}

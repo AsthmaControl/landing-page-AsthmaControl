@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Control de Asma</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/panel-general-botones.css">
+                                                    <link rel="stylesheet" href="assets/css/lp-login.css">
+
+
+
+
 
 </head>
 
@@ -19,7 +25,7 @@
              <li><a href="pp-logistica.html"><img src="assets/images/logistica-y-recursos.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Calendario</a></li>
             <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
             <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
-            <li><a href="index.html"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
         </ul>
     </div>
 
@@ -83,7 +89,7 @@
                     <div class="logistic-item refill-alert">
                         <p class="alert-text">⚠️ Quedan 5 días de medicamento.</p>
                     </div>
-                    <a href="pp-logistica.html" class="action-btn chat-btn small-btn">Gestionar Inventario</a>
+                    <a href="pp-logistica.html" class="action-btn report-btn small-btn">Gestionar Inventario</a>
                 </div>
 
             </div>
@@ -102,14 +108,40 @@
                         <a href="pp-historial.html" class="action-btn blue-btn small-btn">Ver Historial</a>
                     </div>
                      <div class="resource-card">
-                        <h4>Guías de Respiración</h4>
-                        <p>Videos y ejercicios para mejorar la capacidad pulmonar.</p>
-                        <a href="pp-logistica.html" class="action-btn chat-btn small-btn">Ver Recursos</a>
+                        <h4>Calendario</h4>
+                        <p>Mira tus eventos médicos próximos.</p>
+                        <a href="pp-logistica.html" class="action-btn blue-btn small-btn">Ver calendario</a>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+
+    
+
+
+<!-- MODAL PARA CONFIRMAR LOGOUT -->
+<div id="logoutModal" class="modal" style="display:none;">
+  <div class="modal-content" style="padding: 2rem 3rem;">
+    <p style="margin:0 0 1rem 0;">¿Deseas cerrar sesión?</p>
+
+    <div class="modal-buttons" style="margin-top:1.5rem; display:flex; gap:1rem; justify-content:center;">
+      <button id="logoutCancel" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#ccc; cursor:pointer;">
+        Cancelar
+      </button>
+
+      <button id="logoutConfirm" 
+              style="padding:0.7rem 1.4rem; border:none; border-radius:0.5rem; background:#4C6879; color:white; cursor:pointer;">
+        Cerrar sesión
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/scripts/logout.js"></script>
+
+
 </body>
 </html>

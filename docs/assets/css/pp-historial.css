@@ -148,3 +148,22 @@
     font-size: .875rem;
     margin-top: .9375rem;
 }
+
+.report-btn {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.report-btn:hover {
+    background-color: #449d44;
+}
+
+.action-btn {
+    font-family: 'Roboto', sans-serif; /* misma fuente */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
