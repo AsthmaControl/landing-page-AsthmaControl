@@ -75,7 +75,7 @@
     margin-bottom: 1.875rem;
 }
 
-.tab-btn {
+.tab-boton {
     padding: .75rem 1.25rem;
     background: none;
     border: none;
@@ -88,11 +88,11 @@
     border-bottom: .1875rem solid transparent;
 }
 
-.tab-btn:hover {
+.tab-boton:hover {
     color: #4C6879;
 }
 
-.tab-btn.active-tab {
+.tab-boton.active-tab {
     color: #72c4ff; /* Color principal de enfoque */
     border-bottom: .1875rem solid #72c4ff;
 }
@@ -139,7 +139,7 @@
     color: #999;
 }
 
-.save-btn {
+.save-boton {
     padding: .625rem 1.5625rem;
     border-radius: .5rem;
     border: none;
@@ -163,7 +163,7 @@
     margin-bottom: .9375rem;
 }
 
-.terminate-btn {
+.terminate-boton {
     background-color: #ff744e; /* Color de alerta */
     color: white;
     padding: .5rem .9375rem;
@@ -174,7 +174,7 @@
     transition: background-color 0.2s;
 }
 
-.terminate-btn:hover {
+.terminate-boton:hover {
     background-color: #cc5c3e;
 }
 
@@ -224,4 +224,56 @@
 
 .active-toggle .toggle-circle {
     transform: translateX(1.25rem);
+}
+
+
+@media (max-width: 768px) {
+
+    /* --- Pestañas de configuración scroll horizontal --- */
+    .config-tabs {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .config-tabs::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    /* --- Grupos de permisos a columna única --- */
+    .permission-settings {
+        display: block !important;
+    }
+
+    .perm-group {
+        width: 100% !important;
+        margin-bottom: 20px;
+        padding: 15px !important;
+    }
+
+    /* --- Labels y toggles no se aplastan --- */
+    .toggle-group-perm {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .toggle-group-perm label {
+        font-size: 14px;
+        flex: 1 1 100%;
+    }
+
+    /* --- Inputs del perfil y seguridad ocupan 100% --- */
+    .profile-settings .form-group input,
+    .security-settings .form-group input {
+        width: 100% !important;
+    }
+
+    /* --- Contenedor principal con margen reducido --- */
+    .config-container {
+        margin: 0 10px !important;
+    }
 }

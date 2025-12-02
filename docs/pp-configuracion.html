@@ -24,26 +24,25 @@
              <li><a href="pp-logistica.html"><img src="assets/images/logistica-y-recursos.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Calendario</a></li>
             <li><a href="pp-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chat con Dr.</a></li>
             <li><a href="pp-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
-<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+<li><a href="#" id="botonLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
         </ul>
     </div>
 
     <div class="main-content">
         <header>
-            <span class="toggle-btn">☰</span>
             <h2>Ajustes de Cuenta y Privacidad</h2>
         </header>
 
         <div class="config-container">
             
             <div class="config-tabs">
-                <button class="tab-btn active-tab" data-target="perfil-pac">👤 Mi Cuenta</button>
-                <button class="tab-btn" data-target="permisos">🔗 Permisos y Compartición</button>
-                <button class="tab-btn" data-target="seguridad-pac">🔒 Seguridad</button>
+                <button class="tab-boton active-tab" data-target="perfil-pac">👤 Mi Cuenta</button>
+                <button class="tab-boton" data-target="permisos">🔗 Permisos y Compartición</button>
+                <button class="tab-boton" data-target="seguridad-pac">🔒 Seguridad</button>
             </div>
 
             <div id="permisos" class="config-content active-content">
-                 <h3>Compartición de Datos (HU-42)</h3>
+                 <h3>Compartición de Datos</h3>
                 <p class="config-description">Gestiona qué información ven tus profesionales de salud y otros cuidadores.</p>
                 
                 <div class="permission-settings">
@@ -51,31 +50,31 @@
                         <h4>Dr. Rodrigo Pérez (Neumólogo)</h4>
                         <p class="perm-status">Conectado desde 2024</p>
                         <div class="toggle-group-perm">
-                            <label>Compartir Historial de Crisis y Síntomas (HU-10/49):</label>
+                            <label>Compartir Historial de Crisis y Síntomas:</label>
                             <div class="toggle-switch active-toggle"><div class="toggle-circle"></div></div>
                         </div>
                         <div class="toggle-group-perm">
-                             <label>Compartir Logros y Metas (HU-50):</label>
+                             <label>Compartir Logros y Metas:</label>
                             <div class="toggle-switch"><div class="toggle-circle"></div></div>
                         </div>
-                         <button class="action-btn terminate-btn small-btn" style="margin-top: 15px;">Revocar Acceso</button>
+                         <button class="action-boton terminate-boton small-boton" style="margin-top: 15px;">Revocar Acceso</button>
                     </div>
 
                     <div class="perm-group">
-                        <h4>Modo Familiar / Cuidador Adicional (HU-31)</h4>
+                        <h4>Modo Familiar / Cuidador Adicional</h4>
                         <p class="perm-status">María Sánchez (Madre)</p>
                          <div class="toggle-group-perm">
-                            <label>Permitir acceso al Chat (HU-40):</label>
+                            <label>Permitir acceso al Chat:</label>
                             <div class="toggle-switch active-toggle"><div class="toggle-circle"></div></div>
                         </div>
                          <div class="toggle-group-perm">
-                            <label>Permitir gestión de Inventario (HU-16):</label>
+                            <label>Permitir gestión de Inventario:</label>
                             <div class="toggle-switch active-toggle"><div class="toggle-circle"></div></div>
                         </div>
-                        <button class="action-btn blue-btn small-btn" style="margin-top: 15px;">➕ Añadir Otro Cuidador</button>
+                        <button class="action-boton blue-boton small-boton" style="margin-top: 15px;">➕ Añadir Otro Cuidador</button>
                     </div>
                 </div>
-                <button class="save-btn blue-btn" style="margin-top: 25px;">Guardar Preferencias de Permisos</button>
+                <button class="save-boton blue-boton" style="margin-top: 25px;">Guardar Preferencias de Permisos</button>
             </div>
             
             <div id="perfil-pac" class="config-content">
@@ -93,7 +92,7 @@
                         <label for="email-paciente">Correo de Contacto:</label>
                         <input type="email" id="email-paciente" value="laura.gomez@mail.com">
                     </div>
-                    <button class="save-btn blue-btn">Actualizar Información</button>
+                    <button class="save-boton blue-boton">Actualizar Información</button>
                 </div>
             </div>
             
@@ -108,7 +107,7 @@
                         <label for="new-pass-pac">Nueva Contraseña:</label>
                         <input type="password" id="new-pass-pac">
                     </div>
-                    <button class="save-btn blue-btn">Actualizar Contraseña</button>
+                    <button class="save-boton blue-boton">Actualizar Contraseña</button>
                  </div>
             </div>
 
@@ -117,7 +116,7 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const tabs = document.querySelectorAll('.tab-btn');
+            const tabs = document.querySelectorAll('.tab-boton');
             const contents = document.querySelectorAll('.config-content');
             
             // Inicializar para mostrar la pestaña de Permisos (que es la más relevante para el cuidador)

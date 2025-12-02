@@ -22,14 +22,13 @@
     <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
     <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
     <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
-<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+<li><a href="#" id="botonLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
   </ul>
   </div>
 
   <!-- Contenido principal -->
   <div class="main-content">
       <header>
-          <span class="toggle-btn">☰</span>
           <h2>Información del Paciente</h2>
       </header>
 <div id="pdfContent">
@@ -60,15 +59,15 @@
     <h4>Alertas recientes</h4>
     <div class="recent-alert">
         <p>😷 Omisión Crítica de Dosis: 20/11/2025 - 08:00 AM</p>
-        <a href="pd-alerta-paciente.html" class="btn-view-alert">Ver alerta</a>
+        <a href="pd-reporte-paciente.html" class="boton-view-alert">Ver alerta</a>
     </div>
     <div class="recent-alert">
         <p>🚨 Crisis Severa: 18/11/2025 - 11:30 AM</p>
-        <a href="pd-alerta-paciente.html" class="btn-view-alert">Ver alerta</a>
+        <a href="pd-reporte-paciente.html" class="boton-view-alert">Ver alerta</a>
     </div>
     <div class="recent-alert">
         <p>📉 Ataque Leve: 14/11/2025 - 04:00 PM</p>
-        <a href="pd-alerta-paciente.html" class="btn-view-alert">Ver alerta</a>
+        <a href="pd-reporte-paciente.html" class="boton-view-alert">Ver alerta</a>
     </div>
 </div>
 
@@ -84,7 +83,7 @@
           <!-- Bitácoras de crisis y rescate -->
           <div class="bitacora-grid">
               <div class="bitacora-section">
-                  <h3>Bitácora de Crisis y Eventos (HU-49)</h3>
+                  <h3>Bitácora de Crisis y Eventos</h3>
                   <div class="bitacora-list">
                       <div class="bitacora-item critical-event">
                           <span class="bitacora-icon">🚨</span>
@@ -106,7 +105,7 @@
               </div>
 
               <div class="bitacora-section">
-                  <h3>Bitácora Detallada de Rescate (HU-23)</h3>
+                  <h3>Bitácora Detallada de Rescate</h3>
                   <table class="rescue-table">
                       <thead>
                           <tr><th>Fecha/Hora</th><th>Dosis</th><th>Motivo</th></tr>
@@ -118,11 +117,11 @@
                           <tr><td>15/11/2025 8:00 AM</td><td>1 Inhalación</td><td>Tos matutina</td></tr>
                       </tbody>
                   </table>
-                  <p class="pattern-insight">💡 <strong>Patrón de Riesgo (HU-20):</strong> La mayoría de las crisis severas ocurren entre 10 AM y 1 PM.</p>
+                  <p class="pattern-insight">💡 <strong>Patrón de Riesgo:</strong> La mayoría de las crisis severas ocurren entre 10 AM y 1 PM.</p>
               </div>
           </div>
 <div class="export-pdf-section" style="text-align: center; margin-top: 2rem;">
-    <button id="exportPdfBtn" class="btn-export-pdf">📄 Exportar a PDF</button>
+    <button id="exportPdfboton" class="boton-export-pdf">📄 Exportar a PDF</button>
 </div>
       </div>
       
@@ -149,7 +148,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
-document.getElementById("exportPdfBtn").addEventListener("click", function() {
+document.getElementById("exportPdfboton").addEventListener("click", function() {
     const element = document.getElementById("pdfContent");
     const opt = {
         margin: 10, // margen más generoso

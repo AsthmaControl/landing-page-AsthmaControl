@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   
-  const btnLogout = document.getElementById("btnLogout");
+  const botonLogout = document.getElementById("botonLogout");
   const logoutModal = document.getElementById("logoutModal");
   const logoutConfirm = document.getElementById("logoutConfirm");
   const logoutCancel = document.getElementById("logoutCancel");
   const modalContent = logoutModal.querySelector(".modal-content");
 
-  btnLogout.addEventListener("click", (e) => {
+  botonLogout.addEventListener("click", (e) => {
     e.preventDefault(); 
     logoutModal.style.display = "flex";
   });
@@ -42,4 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+});
+
+const sidebar = document.querySelector('.sidebar');
+const toggleBtn = document.querySelector('.toggle-boton');
+
+toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
 });

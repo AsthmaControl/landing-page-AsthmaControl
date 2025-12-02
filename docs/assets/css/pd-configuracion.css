@@ -1,6 +1,3 @@
-/* ============================================== */
-/* ====== ESTILOS ESPECÍFICOS: CONFIGURACIÓN ====== */
-/* ============================================== */
 
 .config-container {
     padding: 1.5625rem;
@@ -17,7 +14,7 @@
     margin-bottom: 1.875rem;
 }
 
-.tab-btn {
+.tab-boton {
     padding: .75rem 1.25rem;
     background: none;
     border: none;
@@ -30,11 +27,11 @@
     border-bottom: .1875rem solid transparent;
 }
 
-.tab-btn:hover {
+.tab-boton:hover {
     color: #4C6879;
 }
 
-.tab-btn.active-tab {
+.tab-boton.active-tab {
     color: #72c4ff; /* Color principal de enfoque */
     border-bottom: .1875rem solid #72c4ff;
 }
@@ -81,7 +78,7 @@
     color: #999;
 }
 
-.save-btn {
+.save-boton {
     padding: .625rem 1.5625rem;
     border-radius: .5rem;
     border: none;
@@ -105,7 +102,7 @@
     margin-bottom: .9375rem;
 }
 
-.terminate-btn {
+.terminate-boton {
     background-color: #ff744e; /* Color de alerta */
     color: white;
     padding: .5rem .9375rem;
@@ -116,7 +113,7 @@
     transition: background-color 0.2s;
 }
 
-.terminate-btn:hover {
+.terminate-boton:hover {
     background-color: #cc5c3e;
 }
 

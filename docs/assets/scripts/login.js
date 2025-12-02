@@ -32,16 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     errorMessage.style.display = "none";
 
-    // Mostrar modal
     successModal.style.display = "flex";
 
-    // Esperar un poco antes de cerrar
     setTimeout(() => {
-      // Agregar clases para animación fade-out
       successModal.classList.add("fade-out");
       modalContent.classList.add("fade-out");
 
-      // Después de la animación, ocultar modal y redirigir
       setTimeout(() => {
         successModal.style.display = "none";
         successModal.classList.remove("fade-out");
@@ -52,38 +48,37 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (email === patientEmail) {
           window.location.href = "panel-paciente.html";
         }
-      }, 300); // Duración de la animación fade-out
+      }, 300);
     }, 1500);
   });
 });
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const botonSimulacion = document.querySelector(".boton-descargar"); // botón "Probar Simulación"
+  const botonsSimulacion = document.querySelectorAll(".boton-descargar, .boton-doctor, .boton-simulacion");
   const modal = document.getElementById("modal-confirmacion");
   const cerrar = document.querySelector(".cerrar");
-  const btnCancelar = document.getElementById("modal-cancelar");
-  const btnAceptar = document.getElementById("modal-aceptar");
+  const botonCancelar = document.getElementById("modal-cancelar");
+  const botonAceptar = document.getElementById("modal-aceptar");
 
-  // Mostrar modal al hacer clic
-  botonSimulacion.addEventListener("click", (e) => {
-    e.preventDefault(); // evita redirección inmediata
-    modal.style.display = "block";
+  botonsSimulacion.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.style.display = "block";
+    });
   });
 
-  // Cerrar modal al hacer clic en X o cancelar
   cerrar.addEventListener("click", () => modal.style.display = "none");
-  btnCancelar.addEventListener("click", () => modal.style.display = "none");
+  botonCancelar.addEventListener("click", () => modal.style.display = "none");
 
-  // Confirmar acción
-  btnAceptar.addEventListener("click", () => {
-    window.location.href = "panel-doctor.html"; // redirige al panel
+  botonAceptar.addEventListener("click", () => {
+    window.location.href = "panel-doctor.html";
   });
 
-  // Cerrar modal si se hace clic fuera del contenido
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";
     }
   });
 });
+

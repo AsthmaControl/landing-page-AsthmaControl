@@ -1,6 +1,3 @@
-/* ================================================= */
-/* ====== ESTILOS ESPECÍFICOS: PACIENTE HISTORIAL ====== */
-/* ================================================= */
 
 .history-container {
     padding: 1.5625rem;
@@ -149,16 +146,16 @@
     margin-top: .9375rem;
 }
 
-.report-btn {
+.report-boton {
     background-color: #5cb85c;
     color: white;
 }
 
-.report-btn:hover {
+.report-boton:hover {
     background-color: #449d44;
 }
 
-.action-btn {
+.action-boton {
     font-family: 'Roboto', sans-serif; /* misma fuente */
     padding: 0.5rem 1rem;
     border: none;
@@ -166,4 +163,18 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+    .chart-section img {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+    }
+
+    .bitacora-grid {
+        display: block !important;
+    }
+
 }

@@ -3,7 +3,7 @@
 /* ============================= */
 
 /* Botón base */
-.action-btn {
+.action-boton {
     text-decoration: none;
     font-family: 'Roboto', sans-serif; /* misma fuente */
     padding: 0.5rem 1rem;
@@ -15,52 +15,52 @@
 }
 
 /* Tamaño pequeño */
-.small-btn {
+.small-boton {
     font-size: 0.8rem;
     padding: 0.25rem 0.75rem;
 }
 
 /* Botón azul principal */
-.blue-btn {
+.blue-boton {
     background-color: #4E89D7;
     color: white;
 }
 
-.blue-btn:hover {
+.blue-boton:hover {
     background-color: #3b6cb1;
 }
 
 /* Botón editar */
-.edit-btn {
+.edit-boton {
     background-color: #f0ad4e;
     color: white;
 }
 
-.edit-btn:hover {
+.edit-boton:hover {
     background-color: #ec971f;
 }
 
 /* Botón reporte/stock */
-.report-btn {
+.report-boton {
     background-color: #5cb85c;
     color: white;
 }
 
-.report-btn:hover {
+.report-boton:hover {
     background-color: #449d44;
 }
 
 /* Opcional: todos los botones con sombra ligera */
-.action-btn {
+.action-boton {
     box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
 }
 
-.action-btn:hover {
+.action-boton:hover {
     box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.15);
 }
 
 
-.blue-btn {
+.blue-boton {
     padding: .75rem 1.5625rem;
     border-radius: .5rem;
     font-weight: 600;
@@ -72,6 +72,6 @@
     margin-right: 1.25rem;
 }
 
-.blue-btn:hover {
+.blue-boton:hover {
     background-color: #4E89D7;
 }

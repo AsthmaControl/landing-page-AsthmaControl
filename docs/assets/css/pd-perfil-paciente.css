@@ -100,7 +100,7 @@
     margin-top: 2rem;
 }
 
-.btn-back {
+.boton-back {
     padding: .5rem 1.2rem;
     background: #ccc;
     color: #333;
@@ -108,9 +108,9 @@
     text-decoration: none;
 }
 
-.btn-back:hover { background: #b6b6b6; }
+.boton-back:hover { background: #b6b6b6; }
 
-.btn-attend {
+.boton-attend {
     padding: .5rem 1.2rem;
     background: #9bffbe;
     color: #2f4c3b;
@@ -119,9 +119,9 @@
     cursor: pointer;
 }
 
-.btn-attend:hover { background: #7ae0a1; }
+.boton-attend:hover { background: #7ae0a1; }
 
-.btn-follow {
+.boton-follow {
     padding: .5rem 1.2rem;
     background: #96c9ff;
     color: white;
@@ -130,9 +130,9 @@
     cursor: pointer;
 }
 
-.btn-follow:hover { background: #83b5e0; }
+.boton-follow:hover { background: #83b5e0; }
 
-.btn-view-alert {
+.boton-view-alert {
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-top: 0.5rem;
@@ -144,7 +144,7 @@
     transition: background 0.2s;
 }
 
-.btn-view-alert:hover {
+.boton-view-alert:hover {
     background-color: #E04C4C;
 }
 
@@ -216,7 +216,7 @@
     color: #333;
 }
 
-.recent-alert .btn-view-alert {
+.recent-alert .boton-view-alert {
     padding: 0.3rem 0.8rem;
     font-size: 0.85rem;
 }
@@ -246,7 +246,7 @@
     color: #900; /* texto rojo oscuro para resaltar */
 }
 
-.recent-alert .btn-view-alert {
+.recent-alert .boton-view-alert {
     background-color: #ff5c5c;
     color: white;
     padding: 0.3rem 0.8rem;
@@ -256,11 +256,11 @@
     transition: background 0.2s;
 }
 
-.recent-alert .btn-view-alert:hover {
+.recent-alert .boton-view-alert:hover {
     background-color: #e04c4c;
 }
 
-.btn-export-pdf {
+.boton-export-pdf {
     background-color: #4C6879;
     color: white;
     padding: 0.8rem 2rem;      /* más grande que antes */
@@ -272,12 +272,12 @@
     transition: background 0.2s, transform 0.2s;
 }
 
-.btn-export-pdf:hover {
+.boton-export-pdf:hover {
     background-color: #3b4f61;
     transform: translateY(-2px); /* efecto hover más dinámico */
 }
 
-.btn-export-pdf {
+.boton-export-pdf {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 

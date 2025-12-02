@@ -66,7 +66,7 @@
     background-color: #d4e0e4;
 }
 
-.add-patient-btn {
+.add-patient-boton {
     padding: .625rem 1.25rem;
     font-size: .9375rem;
     font-weight: 500;
@@ -76,12 +76,12 @@
     transition: opacity 0.2s;
 }
 
-.blue-btn {
-    background: #72c4ff; /* Color similar al dash-btn blue */
+.blue-boton {
+    background: #72c4ff; /* Color similar al dash-boton blue */
     color: white;
 }
 
-.blue-btn:hover {
+.blue-boton:hover {
     opacity: 0.9;
 }
 
@@ -122,7 +122,7 @@
 }
 
 /* Botones de Acción dentro de la Tabla */
-.action-btn {
+.action-boton {
     display: inline-block;
     padding: .4375rem .75rem;
     margin-right: .5rem;
@@ -134,22 +134,22 @@
 }
 
 /* Botón Ver Reporte (HU-13, HU-48) */
-.report-btn {
+.report-boton {
     background-color:#70c380; /* Color principal */
     color: white;
 }
 
-.report-btn:hover {
+.report-boton:hover {
     background-color: #66b075;
 }
 
 /* Botón Chat (HU-40) */
-.chat-btn {
+.chat-boton {
     background-color: #9bffbe; /* Color verde/verde-menta */
     color: #4C6879;
 }
 
-.chat-btn:hover {
+.chat-boton:hover {
     background-color: #79e0a2;
 }
 
@@ -158,4 +158,49 @@
     font-size: .8125rem;
     color: #999;
     text-align: right;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Título principal más pequeño y con margen ajustado */
+  .main-content h2 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Cabecera de acciones: apilar búsqueda y botones */
+  .header-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Barra de búsqueda ocupa todo el ancho */
+  .search-bar-container {
+    width: 100%;
+  }
+
+  .search-input, .search-button, .add-patient-boton {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+
+  /* Tabla: padding y fuente más pequeña */
+  .patient-table th, .patient-table td {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  /* Botones dentro de la tabla más pequeños */
+  .action-boton {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  /* Ajuste tabla-info */
+  .table-info {
+    font-size: 0.75rem;
+    text-align: left;
+  }
 }

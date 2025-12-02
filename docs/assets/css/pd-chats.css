@@ -198,7 +198,7 @@
     outline: none;
 }
 
-.send-btn {
+.send-boton {
   background-color: orange;
   border: 0rem solid black;
   border-radius: .3125rem;
@@ -207,5 +207,5 @@
 }
 
 /* Reutilizando estilos de botones de la sección Pacientes */
-/* .report-btn y .chat-btn se usan para el acceso directo a datos/comunicación */
+/* .report-boton y .chat-boton se usan para el acceso directo a datos/comunicación */
 

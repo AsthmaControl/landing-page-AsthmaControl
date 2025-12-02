@@ -1,26 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const botonSimulacion = document.querySelector(".boton-descargar"); // botón "Probar Simulación"
+  const botonSimulacion = document.querySelector(".boton-descargar"); 
   const modal = document.getElementById("modal-confirmacion");
   const cerrar = document.querySelector(".cerrar");
-  const btnCancelar = document.getElementById("modal-cancelar");
-  const btnAceptar = document.getElementById("modal-aceptar");
+  const botonCancelar = document.getElementById("modal-cancelar");
+  const botonAceptar = document.getElementById("modal-aceptar");
 
-  // Mostrar modal al hacer clic
   botonSimulacion.addEventListener("click", (e) => {
-    e.preventDefault(); // evita redirección inmediata
+    e.preventDefault(); 
     modal.style.display = "block";
   });
 
-  // Cerrar modal al hacer clic en X o cancelar
   cerrar.addEventListener("click", () => modal.style.display = "none");
-  btnCancelar.addEventListener("click", () => modal.style.display = "none");
+  botonCancelar.addEventListener("click", () => modal.style.display = "none");
 
-  // Confirmar acción
-  btnAceptar.addEventListener("click", () => {
-    window.location.href = "panel-doctor.html"; // redirige al panel
+  botonAceptar.addEventListener("click", () => {
+    window.location.href = "panel-doctor.html"; 
   });
 
-  // Cerrar modal si se hace clic fuera del contenido
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";

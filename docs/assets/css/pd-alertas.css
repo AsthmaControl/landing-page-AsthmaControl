@@ -19,7 +19,7 @@
     padding-bottom: .9375rem;
 }
 
-.filter-btn {
+.filter-boton {
     padding: .5rem .9375rem;
     border: .0625rem solid #ddd;
     border-radius: 1.25rem;
@@ -30,7 +30,7 @@
     transition: background-color 0.2s, border-color 0.2s;
 }
 
-.filter-btn:hover {
+.filter-boton:hover {
     background-color: #eee;
 }
 
@@ -115,14 +115,14 @@
     margin-top: .625rem;
 }
 
-/* Acciones de la Alerta (Botones) */
+/* Alert Actions (Buttons) */
 .alert-actions {
     display: flex;
     justify-content: space-between;
     gap: .625rem;
 }
 
-.alert-actions .action-btn {
+.alert-actions .action-boton {
     padding: .5rem .9375rem;
     font-size: .875rem;
     border-radius: .375rem;
@@ -132,22 +132,31 @@
     flex: 1;
 }
 
-.track-btn {
+.track-boton {
     background-color: #96c9ff; /* Color principal */
     color: white;
     border: none;
 }
 
-.track-btn:hover {
+.track-boton:hover {
     background-color: #83afdd;
 }
 
-.resolve-btn {
+.resolve-boton {
     background-color: #9bffbe;
     color: #4C6879;
     border: .0625rem solid #9bffbe;
 }
 
-.resolve-btn:hover {
+.resolve-boton:hover {
     background-color: #7db993;
+}
+
+
+.alert-actions .action-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; /* evita desalineación por line-height heredado */
+    height: 40px;   /* opcional (puedes ajustar) */
 }

@@ -49,7 +49,7 @@
   }
 
   /* Ocultar botones no deseados */
-  .barra-de-navegacion .boton-doctor,
+  .navigation-bar .button-doctor,
   .barra-de-navegacion .boton-login {
     display: none;
   }

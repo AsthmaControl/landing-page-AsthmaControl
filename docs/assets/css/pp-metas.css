@@ -123,8 +123,8 @@
     margin-right: .625rem;
 }
 
-.edit-btn { background-color: #72c4ff; color: white; }
-.remove-btn { background-color: #ff744e; color: white; }
+.edit-boton { background-color: #72c4ff; color: white; }
+.remove-boton { background-color: #ff744e; color: white; }
 
 /* Muro de Logros (HU-12, HU-29) */
 .achievement-grid {
@@ -166,4 +166,26 @@
     font-size: .75rem;
     color: #666;
     margin: .3125rem 0 0 0;
+}
+
+@media (max-width: 768px) {
+
+    .panel-lista li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.7rem;
+        padding: 0.2rem 0.3rem;
+    }
+
+    .panel-lista li a img {
+        margin-bottom: 3px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .goals-grid {
+        grid-template-columns: 1fr !important;
+    }
 }

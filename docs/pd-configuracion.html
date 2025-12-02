@@ -22,22 +22,21 @@
     <li><a href="pd-pacientes.html"><img src="assets/images/patients-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Pacientes</a></li>
     <li><a href="pd-chats.html"><img src="assets/images/chat-symbol.png" height="20" style="vertical-align: -5px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Chats</a></li>
     <li><a href="pd-configuracion.html"><img src="assets/images/settings-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Configuración</a></li>
-<li><a href="#" id="btnLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
+<li><a href="#" id="botonLogout"><img src="assets/images/logout-icon.png" height="22.5" style="vertical-align: -5px; margin-left:-1px; filter: invert(43%) sepia(14%) saturate(640%) hue-rotate(169deg) brightness(90%) contrast(92%);"> Salir</a></li>
   </ul>
 </div>
 
     <div class="main-content">
         <header>
-            <span class="toggle-btn">☰</span>
             <h2>Ajustes y Configuración</h2>
         </header>
 
         <div class="config-container">
             
             <div class="config-tabs">
-                <button class="tab-btn active-tab" data-target="perfil">👤 Mi Perfil</button>
-                <button class="tab-btn" data-target="seguridad">🔒 Seguridad</button>
-                <button class="tab-btn" data-target="notificaciones">🔔 Notificaciones</button>
+                <button class="tab-boton active-tab" data-target="perfil">👤 Mi Perfil</button>
+                <button class="tab-boton" data-target="seguridad">🔒 Seguridad</button>
+                <button class="tab-boton" data-target="notificaciones">🔔 Notificaciones</button>
             </div>
 
             <div id="perfil" class="config-content active-content">
@@ -57,9 +56,9 @@
                     </div>
                     <div class="form-group">
                         <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" value="+54 9 11 5555 1234">
+                        <input type="tel" id="telefono" value="+51 9 11 5555 1234">
                     </div>
-                    <button class="save-btn blue-btn">Guardar Cambios</button>
+                    <button class="save-boton blue-boton">Guardar Cambios</button>
                 </div>
             </div>
 
@@ -78,13 +77,10 @@
                         <label for="confirm-pass">Confirmar Nueva Contraseña:</label>
                         <input type="password" id="confirm-pass">
                     </div>
-                    <button class="save-btn blue-btn">Actualizar Contraseña</button>
+                    <button class="save-boton blue-boton">Actualizar Contraseña</button>
                     
                     <hr>
                     
-                    <h4>Sesiones Activas</h4>
-                    <p class="session-info">Usted está conectado en 2 dispositivos.</p>
-                    <button class="action-btn terminate-btn">Cerrar Sesión en Otros Dispositivos</button>
                 </div>
             </div>
             
@@ -92,25 +88,25 @@
                 <h3>Preferencias de Alertas por Correo</h3>
                 <div class="notification-settings">
                     <div class="toggle-group">
-                        <label>Alertas Críticas de Omisión (HU-11):</label>
+                        <label>Alertas Críticas de Omisión:</label>
                         <div class="toggle-switch active-toggle">
                             <div class="toggle-circle"></div>
                         </div>
                     </div>
                      <div class="toggle-group">
-                        <label>Alertas de Uso Excesivo de Rescate (HU-48):</label>
+                        <label>Alertas de Uso Excesivo de Rescate:</label>
                          <div class="toggle-switch active-toggle">
                             <div class="toggle-circle"></div>
                         </div>
                     </div>
                     <div class="toggle-group">
-                        <label>Recibir Reporte Semanal por Email (HU-13):</label>
+                        <label>Recibir Reporte Semanal por Email:</label>
                         <div class="toggle-switch">
                             <div class="toggle-circle"></div>
                         </div>
                     </div>
                 </div>
-                <button class="save-btn blue-btn" style="margin-top: 20px;">Guardar Preferencias</button>
+                <button class="save-boton blue-boton" style="margin-top: 20px;">Guardar Preferencias</button>
             </div>
 
         </div>
@@ -118,7 +114,7 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const tabs = document.querySelectorAll('.tab-btn');
+            const tabs = document.querySelectorAll('.tab-boton');
             const contents = document.querySelectorAll('.config-content');
 
             tabs.forEach(tab => {
