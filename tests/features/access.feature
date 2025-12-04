@@ -6,6 +6,11 @@ Feature: Inicio de sesión
     Entonces se visualiza un formulario de acceso con los campos "Correo Electrónico" y "Contraseña" con sus placeholders respectivos (ejemplo@correo.com, ••••••••)
     Y se visualiza un botón de acción primario titulado "Acceder"
 
+  Scenario: Inicio de sesión en la plataforma
+    Dado que el usuario se encuentra en la página de Iniciar Sesión
+    Cuando ingresa su correo electrónico y contraseña en los campos respectivos y presiona el botón "Iniciar Sesión"
+    Entonces se muestra una ventana con el mensaje "¡Inicio de sesión exitoso!" abajo de un icono de "check" y el usuario accede al panel que le corresponde (Médico o Paciente) 1 segundo despúes
+    
   Scenario: Opciones de Recuperación y Registro
     Dado que el usuario visualiza el formulario de acceso
     Cuando revisa las opciones adicionales

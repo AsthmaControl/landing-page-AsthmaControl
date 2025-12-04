@@ -9,13 +9,6 @@
     font-weight: 600; /* Hace que el texto se destaque */
 }
 
-.main-content h2 {
-    font-size: 1.75rem;
-    color: #4C6879;
-    margin-top: .625rem;
-    margin-bottom: 1.25rem;
-}
-
 .patient-list-container {
     padding: 1.5625rem;
     margin-top: 1.25rem;
@@ -204,3 +197,4 @@
     text-align: left;
   }
 }
+
