@@ -62,7 +62,7 @@ AsthmaControl está orientado a tres segmentos principales identificados en la i
 
 | Categoría | Herramienta / Lenguaje |
 |------------|------------------------|
-| Frontend | HTML5, CSS3, JavaScript |
+| Frontend | HTML5, CSS3, JavaScript |  
 | Diseño UX/UI | Figma |
 | Control de Versiones | Git, GitHub |
 | Entorno de Desarrollo | WebStorm |
